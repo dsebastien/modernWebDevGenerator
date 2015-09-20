@@ -1,0 +1,28 @@
+{
+  "esnext": true,
+  "strict": true,
+  "devel": true,
+  "browser": true,
+  "forin": true,
+  "curly": true,
+  "bitwise": true,
+  "eqeqeq": true,
+  "freeze": true,
+  "futurehostile": true,
+  "latedef": "nofunc",
+  "maxdepth": 5,
+  "maxparams": 10,
+  "maxstatements": 100,
+  "noarg": true,
+  "nocomma": true,
+  "nonew": true,
+  "singleGroups": true,
+  "undef": true,
+  "unused": true,
+  "jquery": true,
+  "mocha": true,
+  "globals": {
+	"protractor": false,
+	"someWordYouShouldNotCheck": false
+	}
+}

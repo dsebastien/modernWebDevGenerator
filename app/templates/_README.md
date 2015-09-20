@@ -1,0 +1,4 @@
+# <%%= projectName %>
+
+## About
+<%%= projectDescription %>

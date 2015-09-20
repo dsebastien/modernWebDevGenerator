@@ -1,0 +1,41 @@
+{
+  "version": "1.6.0",
+  "compilerOptions": {
+	"target": "es6",
+	"declaration": false,
+	"noImplicitAny": false,
+	"removeComments": true,
+	"noLib": false,
+	"emitDecoratorMetadata": true,
+	"experimentalDecorators": true,
+	"experimentalAsyncFunctions": true,
+	"noResolve": true,
+	"noEmitOnError": false,
+	"preserveConstEnums": true,
+	"inlineSources": false,
+	"sourceMap": false,
+	"outDir": "./app",
+	"project": "./app"
+  },
+  "formatCodeOptions": {
+	"indentSize": 2,
+	"tabSize": 4,
+	"newLineCharacter": "\r\n",
+	"convertTabsToSpaces": false,
+	"insertSpaceAfterCommaDelimiter": true,
+	"insertSpaceAfterSemicolonInForStatements": true,
+	"insertSpaceBeforeAndAfterBinaryOperators": true,
+	"insertSpaceAfterKeywordsInControlFlowStatements": true,
+	"insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+	"placeOpenBraceOnNewLineForFunctions": false,
+	"placeOpenBraceOnNewLineForControlBlocks": false
+  },
+  "filesGlob": [
+	"./app/**/*.ts"
+  ],
+  "exclude": [
+	"node_modules",
+	"jspm_packages"
+  ]
+}
