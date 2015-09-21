@@ -1,5 +1,7 @@
 # Modern Web Dev Generator
 
+[![Join the chat at https://gitter.im/dsebastien/modernWebDevGenerator](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dsebastien/modernWebDevGenerator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://secure.travis-ci.org/dsebastien/modernWebDevGenerator.png?branch=master)](https://travis-ci.org/dsebastien/modernWebDevGenerator)
 [![Coverage Status](https://img.shields.io/coveralls/dsebastien/modernWebDevGenerator.svg?style=flat)](https://coveralls.io/r/dsebastien/modernWebDevGenerator?branch=master)
 [![Dependency Status](https://david-dm.org/dsebastien/modernWebDevGenerator.svg?theme=shields.io&style=flat)](https://david-dm.org/dsebastien/modernWebDevGenerator)
