@@ -178,5 +178,5 @@
   "disallowNodeTypes": ["LabeledStatement"],
   "requireArrowFunctions": true,
   "requireNumericLiterals": true,
-  "requireTemplateString": true
+  "requireTemplateStrings": true
 }
