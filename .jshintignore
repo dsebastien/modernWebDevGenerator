@@ -1,5 +1,3 @@
 node_modules/**/*
 jspm_packages/**/*
 jspm.conf.js
-gulpfile.babel.js
-gulpfile.js

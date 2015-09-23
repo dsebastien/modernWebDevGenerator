@@ -16,14 +16,13 @@
   "validateQuoteMarks": { "mark": "'", "escape": true },
   "excludeFiles": [
 	"node_modules/**",
-	"jspm_packages/**",
-	"gulpfile.babel.js"
+	"jspm_packages/**"
   ],
   "fileExtensions": [".js"],
   "requireSemicolons": true,
   "maximumLineLength": null,
   "disallowTrailingComma": true,
-  "disallowTrailingWhitespace": true,
+  "disallowTrailingWhitespace": "ignoreEmptyLines",
   "disallowDanglingUnderscores": { "allExcept": ["_exception"] },
   "disallowEmptyBlocks": null,
   "disallowImplicitTypeConversion": null,
@@ -69,11 +68,17 @@
 	"do",
 	"switch",
 	"try",
-	"catch"
+	"catch",
+	"function"
   ],
   "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
   "disallowSpaceBeforeBlockStatements": true,
-  "disallowSpaceBeforeKeywords": null,
+  "requireSpaceBeforeKeywords": [
+	"if",
+	"else",
+	"try",
+	"catch"
+  ],
   "disallowSpaceBeforePostfixUnaryOperators": [
 	"++",
 	"--"
@@ -100,12 +105,7 @@
 	"beforeOpeningRoundBrace": true,
 	"beforeOpeningCurlyBrace": true
   },
-  "requireSpacesInsideArrayBrackets": {
-	"allExcept": [ "[", "]", "{", "}" ]
-  },
-  "requireSpacesInsideBrackets": {
-	"allExcept": [ "[", "]", "{", "}" ]
-  },
+  "requireSpacesInsideArrayBrackets": "all",
   "requireSpacesInsideObjectBrackets": {
 	"allExcept": [ "}", ")" ]
   },
@@ -155,7 +155,7 @@
 	"typeof",
 	"function"
   ],
-  "requirePaddingNewLinesBeforeLineComments": { "allExcept": "firstAfterCurly" },
+  "requirePaddingNewLinesBeforeLineComments": null,
   "requireParenthesesAroundIIFE": null,
   "requireSpaceAfterLineComment": null,
   "requireSpacesInConditionalExpression": {
@@ -172,11 +172,11 @@
   "requireSpaceBeforeObjectValues": true,
   "disallowSpaceBeforeComma": true,
   "disallowSpaceBeforeSemicolon": true,
-  "requireVarDeclFirst": true,
+  "requireVarDeclFirst": null,
   "requireMatchingFunctionName": true,
   "requireObjectKeysOnNewLine": true,
   "disallowNodeTypes": ["LabeledStatement"],
   "requireArrowFunctions": true,
   "requireNumericLiterals": true,
-  "requireTemplateStrings": true
+  "requireTemplateStrings": null
 }
