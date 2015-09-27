@@ -33,4 +33,4 @@
 * add travis
 * add travis to templates
 * add code coverage check
-* add gulp build with js style/quality checks
+* add build (gulp) with js style/quality checks
