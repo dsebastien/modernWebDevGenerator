@@ -39,15 +39,11 @@
 
   },
   "devDependencies": {
+	"nodemon": "1.4.x",
 	"babel": "5.8.x",
 	"babel-core": "5.8.x",
-	"bower": "1.5.x",
 	"gulp": "3.9.x",
-	"gulp-babel": "5.2.x",
 	"jspm": "^0.16.x",
-	"nodemon": "1.4.x",
-	"typescript": "1.7.0-dev.20150830",
-	"tsd": "0.6.5-beta",
 	"modern-web-dev-build": "0.0.x"
   },
   "engines": {

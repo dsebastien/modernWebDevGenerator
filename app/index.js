@@ -70,10 +70,6 @@ module.exports = generators.Base.extend({
 		},
 		projectFiles: function () {
 			this.fs.copy(
-				this.templatePath('_bowerrc'),
-				this.destinationPath('.bowerrc')
-			);
-			this.fs.copy(
 				this.templatePath('_dockerignore'),
 				this.destinationPath('.dockerignore')
 			);
@@ -100,10 +96,6 @@ module.exports = generators.Base.extend({
 			this.fs.copy(
 				this.templatePath('_jshintignore'),
 				this.destinationPath('.jshintignore')
-			);
-			this.fs.copy(
-				this.templatePath('_bower.json'),
-				this.destinationPath('bower.json')
 			);
 			this.fs.copy(
 				this.templatePath('_travis.yml'),

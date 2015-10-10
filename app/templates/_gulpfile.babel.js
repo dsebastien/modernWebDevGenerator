@@ -1,8 +1,11 @@
 /*
 	The build is provided by the Modern Web Dev Build: https://github.com/dsebastien/modernWebDevBuild
  */
+"use strict";
 
-'use strict';
+import gulp from "gulp";
 
-let gulp = require('gulp');
-require('modern-web-dev-build');
+import modernWebDevBuild from "modern-web-dev-build";
+let options = undefined; //TODO define options
+
+modernWebDevBuild.registerTasks(gulp, options);

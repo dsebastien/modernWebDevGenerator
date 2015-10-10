@@ -13,7 +13,7 @@
 	"maximum": 2
   },
   "validateParameterSeparator": ", ",
-  "validateQuoteMarks": { "mark": "'", "escape": true },
+  "validateQuoteMarks": { "mark": "\"", "escape": true },
   "excludeFiles": [
 	"node_modules/**",
 	"jspm_packages/**"
