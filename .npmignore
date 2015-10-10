@@ -1,0 +1,41 @@
+# Reference: https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
+
+# Project specific
+test/
+.editorconfig
+.jscsrc
+.jshintignore
+.jshintrc
+gulpfile.babel.js
+gulpfile.js
+travis.yml
+TODO.md
+
+# Misc
+*.log
+
+# NPM
+node_modules
+npm-debug.log
+
+# Windows
+Desktop.ini
+
+# JetBrains IDEs
+*.iml
+.idea/
+.webstorm/
+
+# Git
+.git
+.gitattributes
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+# Icon must end with two \r
+Icon
+
+# Sublime text
+.sublime-gulp.cache
