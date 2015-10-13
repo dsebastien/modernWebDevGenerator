@@ -1,18 +1,56 @@
 "use strict";
 
-var generators = require("yeoman-generator");
+var yeoman = require("yeoman-generator");
 var yosay = require("yosay");
 var chalk = require("chalk");
 
-module.exports = generators.Base.extend({
+module.exports = yeoman.Base.extend({
 
 	constructor: function(){
 		// Setup the base generator
-		generators.Base.apply(this, arguments);
-
-		// Custom code
-		//this.option("foo"); // to add a "--foo" flag
-		//this.argument("appname", { type: String, required: false});
+		yeoman.Base.apply(this, arguments);
+		
+		// all options can be passed directly
+		this.argument("projectName", {
+			desc: "Name of the project",
+			type: String,
+			required: false
+		});
+		this.argument("projectShortName", {
+			desc: "Shortname of the project",
+			type: String,
+			required: false
+		});
+		this.argument("projectDescription", {
+			desc: "Description of the project",
+			type: String,
+			required: false
+		});
+		this.argument("projectOwner", {
+			desc: "Owner of the project",
+			type: String,
+			required: false
+		});
+		this.argument("projectOwnerRole", {
+			desc: "Role of the project owner",
+			type: String,
+			required: false
+		});
+		this.argument("projectOwnerMail", {
+			desc: "Mail of the project owner",
+			type: String,
+			required: false
+		});
+		this.argument("projectOwnerURL", {
+			desc: "URL of the project owner",
+			type: String,
+			required: false
+		});
+		this.argument("projectURL", {
+			desc: "URL of the project",
+			type: String,
+			required: false
+		});
 	},
 
 	// contexts list: http://yeoman.io/authoring/running-context.html
@@ -82,17 +120,17 @@ module.exports = generators.Base.extend({
 
 	configuring: {
 		projectFiles: function(){
-			var projectTemplatesFolder = "./projectTemplates/";
-			var projectFilesFolder = "./projectFiles/";
-
 			// copy files that do not need pre-processing
-			this.directory(projectFilesFolder, ".");
+			this.directory("./projectFiles/", ".");
+		},
+
+		projectTemplates: function(){
+			var projectTemplatesFolder = "./projectTemplates/";
 
 			// copy all files that need specific processing
 			this.fs.copyTpl(
 				this.templatePath(projectTemplatesFolder + "package.json"),
-				this.destinationPath("package.json"),
-				{
+				this.destinationPath("package.json"), {
 					projectName: this.props.projectName,
 					projectShortName: this.props.projectShortName,
 					projectDescription: this.props.projectDescription,
@@ -117,14 +155,17 @@ module.exports = generators.Base.extend({
 					projectURL: this.props.projectURL
 				}
 			);
+		}
+	},
+
+	writing: {
+		applicationFiles: function(){
+			// copy files that do not need pre-processing
+			this.directory("./applicationFiles/", ".");
 		},
 
-		applicationFiles: function(){
+		applicationTemplates: function(){
 			var applicationTemplatesFolders = "./applicationTemplates/";
-			var applicationFilesFolder = "./applicationFiles/";
-
-			// copy files that do not need pre-processing
-			this.directory(applicationFilesFolder, ".");
 
 			// copy all files that need specific processing
 			this.fs.copyTpl(
@@ -186,13 +227,17 @@ module.exports = generators.Base.extend({
 		}
 	},
 
-	writing: {
-		application: function(){
-			// TODO add application setup
-		}
-	},
-
 	install: function(){
-		this.spawnCommand("npm", [ "run", "setup" ]);
+		var skipInstall = this.options[ "skip-install" ];
+
+		this.log("Project created successfully. Enjoy!");
+
+		if(skipInstall){
+			this.log("Run 'npm run setup' to install all required dependencies.");
+		} else{
+			this.spawnCommand("npm", [ "run", "setup" ]);
+		}
 	}
+
+	// contexts: initializing, prompting, configuring, default, writing, conflicts, install, end
 });

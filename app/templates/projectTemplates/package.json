@@ -58,6 +58,7 @@
 	"update": "npm install --no-optional && jspm update && jspm dl-loader",
 	"outdated": "npm outdated",
 	"help": "gulp help",
-	"setup": "npm install --global gulp babel --no-optional && npm install --no-optional && jspm install && npm run tsd"
+	"setup": "npm install --global gulp babel --no-optional && npm install --no-optional && jspm install && npm run tsd",
+	"install": "npm run setup"
   }
 }
