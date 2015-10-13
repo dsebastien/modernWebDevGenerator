@@ -80,7 +80,7 @@
   "scripts": {
 	"clean": "gulp clean",
 	"build": "gulp",
-	"test": "npm run build && mocha",
+	"test": "npm run build && mocha --harmony",
 	"update": "npm install --no-optional",
 	"outdated": "npm outdated",
 	"help": "gulp help",
