@@ -18,6 +18,10 @@ describe("modern-web-dev:app", () =>{
 				someOption: true
 			})
 			.on("end", done);
+
+		//.withOptions({ foo: 'bar' })    // Mock options passed in
+		//.withArguments(['name-x'])      // Mock the arguments
+		//.withPrompts({ coffee: false }) // Mock the prompt answers
 	});
 
 	it("creates files", () =>{

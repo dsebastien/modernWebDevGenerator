@@ -7,9 +7,9 @@ import del from "del";
 
 import config from "../config";
 
-gulp.task("clean", "Clean output directories",
+gulp.task("clean", "Clean",
 	del.bind(null, [
-			config.folders.dist + config.globs.any
+			config.files.yeomanGenerator
 		], {
 			dot: true
 		}

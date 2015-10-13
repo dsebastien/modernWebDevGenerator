@@ -1,19 +1,19 @@
 "use strict";
 
-//import utils from "./utils";
-
-const templatesFolder = "templates";
+import utils from "./utils";
 
 const extensions = {
-	javascript: ".js"
+	javascript: ".js",
+	es2015: ".es2015"
 };
 
 const folders = {
 	root: ".",
 	dist: "./app",
-	src: "./src",
-	srcTemplates: "./" + templatesFolder,
+	src: "./app",
+	templates: "./app/templates",
 	srcPkg: "./gulp",
+	tests: "./test",
 	nodeModules: "./node_modules"
 };
 
@@ -27,26 +27,23 @@ const globs = {
 const files = {
 	any: "*",
 	packageJSON: folders.root + "/package.json",
-	gulpfile: folders.root + "/gulpfile.babel.js"
+	gulpfile: folders.root + "/gulpfile.babel.js",
+	yeomanGenerator: folders.src + "/index.js"
 };
 
 const javascript = {
 	src: [
-		folders.src + globs.scripts.javascript
+		folders.src + globs.scripts.javascript,
+		utils.exclude(folders.templates + globs.scripts.javascript)
 	],
 	srcPkg: [
 		folders.src + globs.scripts.javascript,
+		files.gulpfile,
 		folders.srcPkg + globs.scripts.javascript,
-		files.gulpfile
+		utils.exclude(folders.templates + globs.scripts.javascript)
 	],
-	dest: folders.dist
-};
-
-const copy = {
-	src: [
-		folders.srcTemplates + globs.any
-	],
-	dest: folders.dist + "/" + templatesFolder
+	dest: folders.dist,
+	tests: folders.tests + globs.scripts.javascript
 };
 
 module.exports = {
@@ -54,6 +51,5 @@ module.exports = {
 	folders,
 	globs,
 	files,
-	javascript,
-	copy
+	javascript
 };

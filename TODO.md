@@ -12,7 +12,6 @@
 ** commands list
 * create a sub-generator for Angular 2
 * add dummy test in template
-* finalize/test Makefile
 * add choice for TypeScript vs ES2015 (dependent on flexibility in ModernWebDevBuild)
 * add answer caching (e.g., author info)
   * mention the --skip-cache option if the user wants to be asked everything
@@ -20,6 +19,10 @@
 * add tests
   * generated project content
   * options
-* add code coverage check
 * add docker support
+* add watch task
+  * build, check code style, code quality, run tests
+  * https://github.com/gulpjs/gulp/blob/master/docs/recipes/mocha-test-runner-with-gulp.md
 * add npm shrinkwrap for this project
+* add code coverage check
+* finalize/test Makefile

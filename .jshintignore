@@ -1,4 +1,2 @@
 node_modules/**/*
-jspm_packages/**/*
-jspm.conf.js
-app/**/*
+app/templates/**/*

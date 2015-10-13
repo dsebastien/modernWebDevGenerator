@@ -2,7 +2,7 @@
 
 # Project specific
 test/
-templates/
+app/**/*.es2015.js
 .editorconfig
 .jscsrc
 .jshintignore

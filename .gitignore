@@ -1,9 +1,10 @@
 # Project specific
 *.log
-app/
+app/index.js
 
 # NPM
 node_modules
+npm-debug.log
 
 # Windows
 Desktop.ini

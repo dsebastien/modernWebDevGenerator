@@ -1,0 +1,174 @@
+//
+// Reset stylesheet.
+// Bits and pieces taken from various sources (e.g., HTML5boilerplate, Web Starter Kit, SUITCSS, ...)
+// The base styling approach is to use Nicolas Gallagher's Normalize.css (http://necolas.github.io/normalize.css/) and only reset relevant elements.
+// This is why some styles below are taken from Eric Meyer's CSS reset v2 (http://meyerweb.com/eric/tools/css/reset/) rather than applying it in its entirety
+//
+
+// reset common elements
+// add/remove elements based on what's used in the project
+// http://meyerweb.com/eric/tools/css/reset/
+/*
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+*/
+html, body, div, span, object,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+// ensure that the body uses (at least the full browser height)
+// http://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height
+html {
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+
+// ensure we have a common line-height set as baseline
+body {
+	line-height: 1.4; // unit-less: https://css-tricks.com/almanac/properties/l/line-height/
+}
+
+// reset HTML5 display-role for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main, li{
+	display: block;
+}
+
+// use a more logical box model
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+// make sure that headings inherit the same size as the surrounding text by default
+// rather than having an arbitrary larger size. There'll be less to override that way
+// http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+h1, h2, h3, h4, h5, h6{
+	font-size: inherit;
+}
+
+// less surprises when linking to things
+// links are styled many different ways on the same page (e.g., menus, sidebars, footers, buttons and within text).
+// some parts of the text is light-on-dark, some is dark-on-light
+// the browser default blue or any other color would be illegible
+// simplifies styles by making the links inherit the color intended for the region they're in
+a,
+button {
+	color: inherit;
+	transition: .3s;
+}
+a {
+	text-decoration: none;
+}
+
+// make buttons consistent for starters
+// http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+button {
+	overflow: visible; // for IE
+	border: 0; // reset
+	font: inherit; // reset
+	-webkit-font-smoothing: inherit; // fix buggy inheritance
+	letter-spacing: inherit; // reset
+	background: none; // reset
+	cursor: pointer; // pointers FTW
+}
+
+// fix a known bug in FF that causes buttons to display larger than expected: https://bugzilla.mozilla.org/show_bug.cgi?id=140562
+::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+// prevent any object from being highlighted upon touch event on Webkit
+// alternative: be lazy and apply it on all elements
+// reference: https://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari/
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+// Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
+// These selection rule sets have to be separate.
+::-moz-selection {
+	background: $textSelectionColor;
+	text-shadow: none;
+}
+
+::selection {
+	background: $textSelectionColor;
+	text-shadow: none;
+}
+
+// remove the gap between audio, canvas, iframes,
+// images, videos and the bottom of their containers
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+// allow only vertical resizing of textareas.
+textarea {
+	resize: vertical;
+}
+
+// we're going to change these anyway
+ol,
+ul {
+  list-style: none;
+}
+
+// suppress the focus outline on links that cannot be accessed via keyboard.
+// This prevents an unwanted focus outline from appearing around elements that
+// might still respond to pointer events.
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+// work around a Firefox/IE bug where the transparent `button` background
+// results in a loss of the default `button` focus styles.
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
