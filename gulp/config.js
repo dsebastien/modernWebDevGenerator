@@ -46,7 +46,7 @@ const copy = {
 	src: [
 		folders.srcTemplates + globs.any
 	],
-	dest: `${folders.dist}/${templatesFolder}`
+	dest: folders.dist + "/" + templatesFolder
 };
 
 module.exports = {
