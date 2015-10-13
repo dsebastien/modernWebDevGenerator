@@ -59,6 +59,7 @@
 	"gulp-jscs": "3.0.x",
 	"gulp-jscs-stylish": "1.2.x",
 	"gulp-jshint": "1.11.x",
+	"jshint-stylish": "2.0.x",
 	"gulp-nice-package": "1.0.x",
 	"gulp-notify": "2.2.x",
 	"gulp-plumber": "1.0.x",
