@@ -130,30 +130,11 @@ module.exports = yeoman.Base.extend({
 			// copy all files that need specific processing
 			this.fs.copyTpl(
 				this.templatePath(projectTemplatesFolder + "package.json"),
-				this.destinationPath("package.json"), {
-					projectName: this.props.projectName,
-					projectShortName: this.props.projectShortName,
-					projectDescription: this.props.projectDescription,
-					projectOwner: this.props.projectOwner,
-					projectOwnerRole: this.props.projectOwnerRole,
-					projectOwnerMail: this.props.projectOwnerMail,
-					projectOwnerURL: this.props.projectOwnerURL,
-					projectURL: this.props.projectURL
-				}
+				this.destinationPath("package.json"), this.props
 			);
 			this.fs.copyTpl(
 				this.templatePath(projectTemplatesFolder + "README.md"),
-				this.destinationPath("README.md"),
-				{
-					projectName: this.props.projectName,
-					projectShortName: this.props.projectShortName,
-					projectDescription: this.props.projectDescription,
-					projectOwner: this.props.projectOwner,
-					projectOwnerRole: this.props.projectOwnerRole,
-					projectOwnerMail: this.props.projectOwnerMail,
-					projectOwnerURL: this.props.projectOwnerURL,
-					projectURL: this.props.projectURL
-				}
+				this.destinationPath("README.md"), this.props
 			);
 		}
 	},
@@ -170,59 +151,19 @@ module.exports = yeoman.Base.extend({
 			// copy all files that need specific processing
 			this.fs.copyTpl(
 				this.templatePath(applicationTemplatesFolders + "app/index.html"),
-				this.destinationPath("app/index.html"),
-				{
-					projectName: this.props.projectName,
-					projectShortName: this.props.projectShortName,
-					projectDescription: this.props.projectDescription,
-					projectOwner: this.props.projectOwner,
-					projectOwnerRole: this.props.projectOwnerRole,
-					projectOwnerMail: this.props.projectOwnerMail,
-					projectOwnerURL: this.props.projectOwnerURL,
-					projectURL: this.props.projectURL
-				}
+				this.destinationPath("app/index.html"), this.props
 			);
 			this.fs.copyTpl(
 				this.templatePath(applicationTemplatesFolders + "app/humans.txt"),
-				this.destinationPath("app/humans.txt"),
-				{
-					projectName: this.props.projectName,
-					projectShortName: this.props.projectShortName,
-					projectDescription: this.props.projectDescription,
-					projectOwner: this.props.projectOwner,
-					projectOwnerRole: this.props.projectOwnerRole,
-					projectOwnerMail: this.props.projectOwnerMail,
-					projectOwnerURL: this.props.projectOwnerURL,
-					projectURL: this.props.projectURL
-				}
+				this.destinationPath("app/humans.txt"), this.props
 			);
 			this.fs.copyTpl(
 				this.templatePath(applicationTemplatesFolders + "app/manifest.json"),
-				this.destinationPath("app/manifest.json"),
-				{
-					projectName: this.props.projectName,
-					projectShortName: this.props.projectShortName,
-					projectDescription: this.props.projectDescription,
-					projectOwner: this.props.projectOwner,
-					projectOwnerRole: this.props.projectOwnerRole,
-					projectOwnerMail: this.props.projectOwnerMail,
-					projectOwnerURL: this.props.projectOwnerURL,
-					projectURL: this.props.projectURL
-				}
+				this.destinationPath("app/manifest.json"), this.props
 			);
 			this.fs.copyTpl(
 				this.templatePath(applicationTemplatesFolders + "app/manifest.webapp"),
-				this.destinationPath("app/manifest.webapp"),
-				{
-					projectName: this.props.projectName,
-					projectShortName: this.props.projectShortName,
-					projectDescription: this.props.projectDescription,
-					projectOwner: this.props.projectOwner,
-					projectOwnerRole: this.props.projectOwnerRole,
-					projectOwnerMail: this.props.projectOwnerMail,
-					projectOwnerURL: this.props.projectOwnerURL,
-					projectURL: this.props.projectURL
-				}
+				this.destinationPath("app/manifest.webapp"), this.props
 			);
 		}
 	},
