@@ -1,0 +1,7 @@
+//
+// Includes/imports all third-party stylesheets used throughout the application.
+// Should be loaded before the application stylesheets
+//
+
+// Nicolas Gallagher's Normalize.css
+@import '../../jspm_packages/github/necolas/normalize.css@3.0.3/normalize.css'; // the path refers to the file at BUILD time

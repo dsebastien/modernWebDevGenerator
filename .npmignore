@@ -6,9 +6,9 @@ test/
 .jscsrc
 .jshintignore
 .jshintrc
+.travis.yml
 gulpfile.babel.js
 gulpfile.js
-travis.yml
 TODO.md
 
 # Misc

@@ -1,4 +1,0 @@
-# <%%= projectName %>
-
-## About
-<%%= projectDescription %>

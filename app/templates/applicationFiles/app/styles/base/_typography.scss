@@ -1,0 +1,47 @@
+//
+// Typography related styles.
+// Taken from various sources (e.g., HTML5boilerplate, Web Starter Kit, SUITCSS, ...)
+//
+
+html {
+	// define the root em value
+	// rem units specified for fonts will refer to this root em value
+	// http://stackoverflow.com/questions/6905834/should-i-set-the-default-font-size-on-the-body-or-html-element
+	// https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
+	font-size: 62.5%;
+}
+
+body {
+	// optimize fonts rendering for legibility rather than speed
+	// https://css-tricks.com/almanac/properties/t/text-rendering/
+	// http://aestheticallyloyal.com/public/optimize-legibility/
+	// non-standard and buggy in older Android browser versions
+	text-rendering: optimizeLegibility;
+
+	// ensure that kerning is enabled in most browsers (addition to the above)
+	font-feature-settings: "kern" 1; // Chrome (not Windows), Firefox, IE 10+
+	font-kerning: normal; // Safari 7 and future browsers
+
+	// make'em look nice
+	// fonts on OSX will look more consistent with other systems that do not render text using sub-pixel anti-aliasing
+	// although grayscale is inferior to sub-pixel anti-aliasing, most fonts were designed for the 'thinner' anti-aliasing and look better that way
+	// setting the smoothing beforehand prevents an ugly flickering of font 'thickness' when animations start and stop
+	// http://davidwalsh.name/font-smoothing
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-family: 'Roboto-Regular', monospace, sans-serif;
+	font-size: 14px; // necessary for older browsers
+	font-size: 1.4rem; // text's default font size (14px)
+	font-style: normal;
+	font-weight: normal; // 400: http://www.w3schools.com/cssref/pr_font_weight.asp
+	letter-spacing: -0.02em;
+	color: $fontColorDefault;
+}
+
+.container > header > h1 {
+	font-family: monospace, sans-serif;
+	font-size: 40px;
+	font-size: 4.0rem;
+}
+
