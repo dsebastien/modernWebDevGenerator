@@ -62,7 +62,8 @@
 	"gulp-nice-package": "1.0.x",
 	"gulp-notify": "2.2.x",
 	"gulp-plumber": "1.0.x",
-	"gulp-size": "2.0.x"
+	"gulp-size": "2.0.x",
+	"gulp-util": "3.0.x"
   },
   "main": "app/index.js",
   "files": [
