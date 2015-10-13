@@ -1,4 +1,3 @@
-* replace options with the options object!
 * if argument is provided: don't prompt
 * doc all existing options and how to use them
   * skipCache to ask all questions

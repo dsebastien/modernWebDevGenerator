@@ -4,50 +4,101 @@ var yeoman = require("yeoman-generator");
 var yosay = require("yosay");
 var chalk = require("chalk");
 
-module.exports = yeoman.Base.extend({
+var argumentDescriptors = {
+	projectName: {
+		name: "projectName",
+		argumentName: "project-name",
+		description: "Name of the project",
+		prompt: "What is the project name?"
+	},
+	projectShortName: {
+		name: "projectShortName",
+		argumentName: "project-short-name",
+		description: "Shortname of the project",
+		prompt: "What is the project name shortname?"
+	},
+	projectDescription: {
+		name: "projectDescription",
+		argumentName: "project-description",
+		description: "Description of the project",
+		prompt: "What is the project description?"
+	},
+	projectOwner: {
+		name: "projectOwner",
+		argumentName: "project-owner",
+		description: "Owner of the project",
+		prompt: "What is your name?"
+	},
+	projectOwnerRole: {
+		name: "projectOwnerRole",
+		argumentName: "project-owner-role",
+		description: "Role of the project owner",
+		prompt: "What is your role?"
+	},
+	projectOwnerMail: {
+		name: "projectOwnerMail",
+		argumentName: "project-owner-mail",
+		description: "Mail of the project owner",
+		prompt: "What is your e-mail address?"
+	},
+	projectOwnerURL: {
+		name: "projectOwnerURL",
+		argumentName: "project-owner-url",
+		description: "URL of the project owner",
+		prompt: "What is the address of your website?"
+	},
+	projectURL: {
+		name: "projectURL",
+		argumentName: "project-url",
+		description: "URL of the project",
+		prompt: "What is the address of the project?"
+	}
+}
+
+let modernWebDevGenerator = yeoman.Base.extend({
 
 	constructor: function(){
 		// Setup the base generator
 		yeoman.Base.apply(this, arguments);
-		
+
 		// all options can be passed directly
-		this.argument("projectName", {
-			desc: "Name of the project",
+		this.argument(argumentDescriptors.projectName.argumentName, {
+			desc: argumentDescriptors.projectName.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectShortName", {
-			desc: "Shortname of the project",
+		this.argument(argumentDescriptors.projectShortName.argumentName, {
+			desc: argumentDescriptors.projectShortName.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectDescription", {
-			desc: "Description of the project",
+		this.argument(argumentDescriptors.projectDescription.argumentName, {
+			desc: argumentDescriptors.projectDescription.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectOwner", {
-			desc: "Owner of the project",
+		this.argument(argumentDescriptors.projectOwner.argumentName, {
+			desc: argumentDescriptors.projectOwner.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectOwnerRole", {
-			desc: "Role of the project owner",
+		this.argument(argumentDescriptors.projectOwnerRole.argumentName, {
+			desc: argumentDescriptors.projectOwnerRole.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectOwnerMail", {
-			desc: "Mail of the project owner",
+		this.argument(argumentDescriptors.projectOwnerMail.argumentName, {
+			desc: argumentDescriptors.projectOwnerMail.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectOwnerURL", {
-			desc: "URL of the project owner",
+		this.argument(argumentDescriptors.projectOwnerURL.argumentName, {
+			desc: argumentDescriptors.projectOwnerURL.description,
 			type: String,
 			required: false
 		});
-		this.argument("projectURL", {
-			desc: "URL of the project",
+		this.argument(argumentDescriptors.projectURL.argumentName, {
+			desc: argumentDescriptors.projectURL.description,
 			type: String,
 			required: false
 		});
@@ -63,50 +114,50 @@ module.exports = yeoman.Base.extend({
 		var prompts = [
 			{
 				type: "input",
-				name: "projectName",
-				message: "What is the project name?",
+				name: argumentDescriptors.projectName.name,
+				message: argumentDescriptors.projectName.prompt,
 				default: this.appname // default: current folder name
 			},
 			{
 				type: "input",
-				name: "projectShortName",
-				message: "What is the project name shortname?",
+				name: argumentDescriptors.projectShortName.name,
+				message: argumentDescriptors.projectShortName.prompt,
 				default: this.appname // default: current folder name
 			},
 			{
 				type: "input",
-				name: "projectDescription",
-				message: "What is the project description?",
+				name: argumentDescriptors.projectDescription.name,
+				message: argumentDescriptors.projectDescription.prompt,
 				default: "Created by the ModernWebDev Yeoman Generator"
 			},
 			{
 				type: "input",
-				name: "projectOwner",
-				message: "What is your name?",
+				name: argumentDescriptors.projectOwner.name,
+				message: argumentDescriptors.projectOwner.prompt,
 				default: "nobody"
 			},
 			{
 				type: "input",
-				name: "projectOwnerRole",
-				message: "What is your role?",
+				name: argumentDescriptors.projectOwnerRole.name,
+				message: argumentDescriptors.projectOwnerRole.prompt,
 				default: "Project Lead"
 			},
 			{
 				type: "input",
-				name: "projectOwnerMail",
-				message: "What is your e-mail address?",
+				name: argumentDescriptors.projectOwnerMail.name,
+				message: argumentDescriptors.projectOwnerMail.prompt,
 				default: "foo@bar.com"
 			},
 			{
 				type: "input",
-				name: "projectOwnerURL",
-				message: "What is the address of your website?",
+				name: argumentDescriptors.projectOwnerURL.name,
+				message: argumentDescriptors.projectOwnerURL.prompt,
 				default: "https://twitter.com/dsebastien"
 			},
 			{
 				type: "input",
-				name: "projectURL",
-				message: "What is the address of the project?",
+				name: argumentDescriptors.projectURL.name,
+				message: argumentDescriptors.projectURL.prompt,
 				default: "https://www.dsebastien.net"
 			}
 		];
@@ -182,3 +233,5 @@ module.exports = yeoman.Base.extend({
 
 	// contexts: initializing, prompting, configuring, default, writing, conflicts, install, end
 });
+
+module.exports = modernWebDevGenerator;
