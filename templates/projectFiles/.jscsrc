@@ -16,8 +16,7 @@
   "validateQuoteMarks": { "mark": "\"", "escape": true },
   "excludeFiles": [
 	"node_modules/**",
-	"jspm_packages/**",
-	"app/**"
+	"jspm_packages/**"
   ],
   "fileExtensions": [".js"],
   "requireSemicolons": true,

@@ -2,6 +2,7 @@
 
 # Project specific
 test/
+templates/
 .editorconfig
 .jscsrc
 .jshintignore

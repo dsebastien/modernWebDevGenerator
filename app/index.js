@@ -1,237 +1,211 @@
 "use strict";
 
-var yeoman = require("yeoman-generator");
-var yosay = require("yosay");
-var chalk = require("chalk");
+var _interopRequireDefault = require("babel-runtime/helpers/interop-require-default")["default"];
 
-var argumentDescriptors = {
+var _yeomanGenerator = require("yeoman-generator");
+
+var _yeomanGenerator2 = _interopRequireDefault(_yeomanGenerator);
+
+var _yosay = require("yosay");
+
+var _yosay2 = _interopRequireDefault(_yosay);
+
+var _chalk = require("chalk");
+
+var _chalk2 = _interopRequireDefault(_chalk);
+
+var descriptors = {
 	projectName: {
 		name: "projectName",
-		argumentName: "project-name",
+		argName: "project-name",
 		description: "Name of the project",
 		prompt: "What is the project name?"
 	},
 	projectShortName: {
 		name: "projectShortName",
-		argumentName: "project-short-name",
+		argName: "project-short-name",
 		description: "Shortname of the project",
 		prompt: "What is the project name shortname?"
 	},
 	projectDescription: {
 		name: "projectDescription",
-		argumentName: "project-description",
+		argName: "project-description",
 		description: "Description of the project",
 		prompt: "What is the project description?"
 	},
 	projectOwner: {
 		name: "projectOwner",
-		argumentName: "project-owner",
+		argName: "project-owner",
 		description: "Owner of the project",
 		prompt: "What is your name?"
 	},
 	projectOwnerRole: {
 		name: "projectOwnerRole",
-		argumentName: "project-owner-role",
+		argName: "project-owner-role",
 		description: "Role of the project owner",
 		prompt: "What is your role?"
 	},
 	projectOwnerMail: {
 		name: "projectOwnerMail",
-		argumentName: "project-owner-mail",
+		argName: "project-owner-mail",
 		description: "Mail of the project owner",
 		prompt: "What is your e-mail address?"
 	},
 	projectOwnerURL: {
 		name: "projectOwnerURL",
-		argumentName: "project-owner-url",
+		argName: "project-owner-url",
 		description: "URL of the project owner",
 		prompt: "What is the address of your website?"
 	},
 	projectURL: {
 		name: "projectURL",
-		argumentName: "project-url",
+		argName: "project-url",
 		description: "URL of the project",
 		prompt: "What is the address of the project?"
 	}
-}
+};
 
-let modernWebDevGenerator = yeoman.Base.extend({
+var modernWebDevGenerator = _yeomanGenerator2["default"].Base.extend({
 
-	constructor: function(){
-		// Setup the base generator
-		yeoman.Base.apply(this, arguments);
+	constructor: function constructor() {
+		_yeomanGenerator2["default"].Base.apply(this, arguments);
 
-		// all options can be passed directly
-		this.argument(argumentDescriptors.projectName.argumentName, {
-			desc: argumentDescriptors.projectName.description,
+		this.argument(descriptors.projectName.argName, {
+			desc: descriptors.projectName.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectShortName.argumentName, {
-			desc: argumentDescriptors.projectShortName.description,
+		this.argument(descriptors.projectShortName.argName, {
+			desc: descriptors.projectShortName.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectDescription.argumentName, {
-			desc: argumentDescriptors.projectDescription.description,
+		this.argument(descriptors.projectDescription.argName, {
+			desc: descriptors.projectDescription.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectOwner.argumentName, {
-			desc: argumentDescriptors.projectOwner.description,
+		this.argument(descriptors.projectOwner.argName, {
+			desc: descriptors.projectOwner.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectOwnerRole.argumentName, {
-			desc: argumentDescriptors.projectOwnerRole.description,
+		this.argument(descriptors.projectOwnerRole.argName, {
+			desc: descriptors.projectOwnerRole.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectOwnerMail.argumentName, {
-			desc: argumentDescriptors.projectOwnerMail.description,
+		this.argument(descriptors.projectOwnerMail.argName, {
+			desc: descriptors.projectOwnerMail.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectOwnerURL.argumentName, {
-			desc: argumentDescriptors.projectOwnerURL.description,
+		this.argument(descriptors.projectOwnerURL.argName, {
+			desc: descriptors.projectOwnerURL.description,
 			type: String,
 			required: false
 		});
-		this.argument(argumentDescriptors.projectURL.argumentName, {
-			desc: argumentDescriptors.projectURL.description,
+		this.argument(descriptors.projectURL.argName, {
+			desc: descriptors.projectURL.description,
 			type: String,
 			required: false
 		});
 	},
 
-	// contexts list: http://yeoman.io/authoring/running-context.html
-	prompting: function(){
+	prompting: function prompting() {
+		var _this = this;
+
 		var done = this.async();
 
-		// Have Yeoman greet the user.
-		this.log(yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator"));
+		this.log((0, _yosay2["default"])("Welcome to the " + _chalk2["default"].green("ModernWebDev") + " Yeoman Generator"));
 
-		var prompts = [
-			{
-				type: "input",
-				name: argumentDescriptors.projectName.name,
-				message: argumentDescriptors.projectName.prompt,
-				default: this.appname // default: current folder name
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectShortName.name,
-				message: argumentDescriptors.projectShortName.prompt,
-				default: this.appname // default: current folder name
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectDescription.name,
-				message: argumentDescriptors.projectDescription.prompt,
-				default: "Created by the ModernWebDev Yeoman Generator"
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectOwner.name,
-				message: argumentDescriptors.projectOwner.prompt,
-				default: "nobody"
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectOwnerRole.name,
-				message: argumentDescriptors.projectOwnerRole.prompt,
-				default: "Project Lead"
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectOwnerMail.name,
-				message: argumentDescriptors.projectOwnerMail.prompt,
-				default: "foo@bar.com"
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectOwnerURL.name,
-				message: argumentDescriptors.projectOwnerURL.prompt,
-				default: "https://twitter.com/dsebastien"
-			},
-			{
-				type: "input",
-				name: argumentDescriptors.projectURL.name,
-				message: argumentDescriptors.projectURL.prompt,
-				default: "https://www.dsebastien.net"
-			}
-		];
+		var prompts = [{
+			type: "input",
+			name: descriptors.projectName.name,
+			message: descriptors.projectName.prompt,
+			"default": this.appname }, {
+			type: "input",
+			name: descriptors.projectShortName.name,
+			message: descriptors.projectShortName.prompt,
+			"default": this.appname }, {
+			type: "input",
+			name: descriptors.projectDescription.name,
+			message: descriptors.projectDescription.prompt,
+			"default": "Created by the ModernWebDev Yeoman Generator"
+		}, {
+			type: "input",
+			name: descriptors.projectOwner.name,
+			message: descriptors.projectOwner.prompt,
+			"default": "nobody"
+		}, {
+			type: "input",
+			name: descriptors.projectOwnerRole.name,
+			message: descriptors.projectOwnerRole.prompt,
+			"default": "Project Lead"
+		}, {
+			type: "input",
+			name: descriptors.projectOwnerMail.name,
+			message: descriptors.projectOwnerMail.prompt,
+			"default": "foo@bar.com"
+		}, {
+			type: "input",
+			name: descriptors.projectOwnerURL.name,
+			message: descriptors.projectOwnerURL.prompt,
+			"default": "https://twitter.com/dsebastien"
+		}, {
+			type: "input",
+			name: descriptors.projectURL.name,
+			message: descriptors.projectURL.prompt,
+			"default": "https://www.dsebastien.net"
+		}];
 
-		this.prompt(prompts, function(answers){
-			this.props = answers; // to access props later use this.props.someOption;
+		this.prompt(prompts, function (answers) {
+			_this.props = answers;
 
 			done();
-		}.bind(this));
+		});
 	},
 
 	configuring: {
-		projectFiles: function(){
-			// copy files that do not need pre-processing
+		projectFiles: function projectFiles() {
 			this.directory("./projectFiles/", ".");
 		},
 
-		projectTemplates: function(){
+		projectTemplates: function projectTemplates() {
 			var projectTemplatesFolder = "./projectTemplates/";
 
-			// copy all files that need specific processing
-			this.fs.copyTpl(
-				this.templatePath(projectTemplatesFolder + "package.json"),
-				this.destinationPath("package.json"), this.props
-			);
-			this.fs.copyTpl(
-				this.templatePath(projectTemplatesFolder + "README.md"),
-				this.destinationPath("README.md"), this.props
-			);
+			this.fs.copyTpl(this.templatePath(projectTemplatesFolder + "package.json"), this.destinationPath("package.json"), this.props);
+			this.fs.copyTpl(this.templatePath(projectTemplatesFolder + "README.md"), this.destinationPath("README.md"), this.props);
 		}
 	},
 
 	writing: {
-		applicationFiles: function(){
-			// copy files that do not need pre-processing
+		applicationFiles: function applicationFiles() {
 			this.directory("./applicationFiles/", ".");
 		},
 
-		applicationTemplates: function(){
+		applicationTemplates: function applicationTemplates() {
 			var applicationTemplatesFolders = "./applicationTemplates/";
 
-			// copy all files that need specific processing
-			this.fs.copyTpl(
-				this.templatePath(applicationTemplatesFolders + "app/index.html"),
-				this.destinationPath("app/index.html"), this.props
-			);
-			this.fs.copyTpl(
-				this.templatePath(applicationTemplatesFolders + "app/humans.txt"),
-				this.destinationPath("app/humans.txt"), this.props
-			);
-			this.fs.copyTpl(
-				this.templatePath(applicationTemplatesFolders + "app/manifest.json"),
-				this.destinationPath("app/manifest.json"), this.props
-			);
-			this.fs.copyTpl(
-				this.templatePath(applicationTemplatesFolders + "app/manifest.webapp"),
-				this.destinationPath("app/manifest.webapp"), this.props
-			);
+			this.fs.copyTpl(this.templatePath(applicationTemplatesFolders + "app/index.html"), this.destinationPath("app/index.html"), this.props);
+			this.fs.copyTpl(this.templatePath(applicationTemplatesFolders + "app/humans.txt"), this.destinationPath("app/humans.txt"), this.props);
+			this.fs.copyTpl(this.templatePath(applicationTemplatesFolders + "app/manifest.json"), this.destinationPath("app/manifest.json"), this.props);
+			this.fs.copyTpl(this.templatePath(applicationTemplatesFolders + "app/manifest.webapp"), this.destinationPath("app/manifest.webapp"), this.props);
 		}
 	},
 
-	install: function(){
-		var skipInstall = this.options[ "skip-install" ];
+	install: function install() {
+		var skipInstall = this.options["skip-install"];
 
 		this.log("Project created successfully. Enjoy!");
 
-		if(skipInstall){
-			this.log("Run 'npm run setup' to install all required dependencies.");
-		} else{
-			this.spawnCommand("npm", [ "run", "setup" ]);
+		if (skipInstall) {
+			this.log("Run 'npm run setup' to install all required dependencies. Check out the README file instructions");
+		} else {
+			this.spawnCommand("npm", ["run", "setup"]);
 		}
 	}
 
-	// contexts: initializing, prompting, configuring, default, writing, conflicts, install, end
 });
 
 module.exports = modernWebDevGenerator;
