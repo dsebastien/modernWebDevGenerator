@@ -29,7 +29,7 @@ This project is available as an NPM package; check out the usage instructions be
 ## Background
 Please note that this project is heavily inspired from:
 * Google's [Web Starter Kit](https://github.com/google/web-starter-kit)
-* [HTML5 Boiletplate](https://html5boilerplate.com/)
+* [HTML5 Boilerplate](https://html5boilerplate.com/)
 * Brad Frost's [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design)
 * Nicolas Gallagher's [SUIT CSS](https://github.com/suitcss)
 * Countless blog articles
