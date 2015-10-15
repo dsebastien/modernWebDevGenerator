@@ -39,6 +39,7 @@
   "devDependencies": {
 	"nodemon": "1.4.x",
 	"babel": "5.8.x",
+	"babel-core": "5.8.x",
 	"babel-runtime": "5.8.x",
 	"gulp": "3.9.x",
 	"modern-web-dev-build": "0.0.7"

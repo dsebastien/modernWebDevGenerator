@@ -26,3 +26,5 @@
 * add npm shrinkwrap for this project
 * add code coverage check
 * finalize/test Makefile
+* replace es6 by es2015 now that the following has landed: https://github.com/Microsoft/TypeScript/issues/5209
+  * requires update of TypeScript
