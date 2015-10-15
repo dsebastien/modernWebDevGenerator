@@ -45,7 +45,7 @@ Check out the current [TODO list](TODO.md)
 In order to use this generator you first need to install Yeoman:
 
 ```bash
-npm install -g yeoman
+npm -g install yo
 ```
 
 Once Yeoman is installed, you can install this generator:
