@@ -3,7 +3,9 @@
   *     "npm-check": "4.1.0"
   * var npmCheck = require("npm-check");
   * also add to generator after installation
-* update Angular to alpha 39
+* update to latest Angular version
+  * remove useless typings
+    * https://docs.google.com/document/d/1LvPBh7yxmjr7N1vCQ-kBj4guZGfGLBiz44CfenOX6o0/preview
 * update jspm
 * add scripts (dependent of ModernWebDevBuild improvements)
 * complete the readme
