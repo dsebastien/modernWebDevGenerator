@@ -56,7 +56,7 @@ npm install -g generator-modern-web-dev
 
 You will also need to install gulp and babel globally: 
 ```bash
-npm install --global gulp babel --no-optional
+npm install --global gulp babel-core --no-optional
 ```
 
 Create a new folder, go into it then invoke the generator by running the following command:
@@ -142,7 +142,7 @@ If you want to build from source, you need to:
 * install NodeJS and npm
 * clone this git repository
 * install gulp: `npm install --global gulp`
-* install babel: `npm install --global babel`
+* install babel: `npm install --global babel-core`
 * run `npm run setup`
 * start hacking :)
 
