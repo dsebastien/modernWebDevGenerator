@@ -3,7 +3,7 @@
 import gulp from "gulp";
 import help from "gulp-help";
 help(gulp); // provide help through "gulp help" -- the help text is the second gulp task argument (https://www.npmjs.com/package/gulp-help/)
-import changed from "gulp-changed";
+//import changed from "gulp-changed";
 import babel from "gulp-babel";
 //import iff from "gulp-if";
 import size from "gulp-size";
@@ -16,7 +16,7 @@ import utils from "../utils";
 gulp.task("scripts-javascript-dist", "Transpile JavaScript (ES2015 to ES5 using Babel)", () =>{
 	return utils.plumbedSrc(// handle errors nicely (i.e., without breaking watch)
 		config.javascript.src
-	)
+		)
 
 		// Display the files in the stream
 		//.pipe(debug({title: "Stream contents:", minimal: true}))
@@ -36,7 +36,7 @@ gulp.task("scripts-javascript-dist", "Transpile JavaScript (ES2015 to ES5 using 
 		//.pipe(debug({title: "Stream contents:", minimal: true}))
 
 		// Remove the es2015 extension
-		.pipe(rename(function(path){
+		.pipe(rename((path) =>{
 			path.basename = path.basename.replace(config.extensions.es2015, "");
 		}))
 

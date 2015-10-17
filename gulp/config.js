@@ -46,7 +46,7 @@ const javascript = {
 	tests: folders.tests + globs.scripts.javascript
 };
 
-module.exports = {
+export default {
 	extensions,
 	folders,
 	globs,

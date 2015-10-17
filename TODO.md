@@ -1,12 +1,13 @@
+* update to latest Angular version
+  * remove useless typings
+	* https://docs.google.com/document/d/1LvPBh7yxmjr7N1vCQ-kBj4guZGfGLBiz44CfenOX6o0/preview
+* update jspm
+* check out https://github.com/babel/generator-babel-boilerplate/blob/master/app/index.js
 * if argument is provided: don't prompt
 * add dependency versions check (same for mwd & mdl)
   *     "npm-check": "4.1.0"
   * var npmCheck = require("npm-check");
   * also add to generator after installation
-* update to latest Angular version
-  * remove useless typings
-    * https://docs.google.com/document/d/1LvPBh7yxmjr7N1vCQ-kBj4guZGfGLBiz44CfenOX6o0/preview
-* update jspm
 * add scripts (dependent of ModernWebDevBuild improvements)
 * complete the readme
 ** how to add runtime dependencies (jspm)

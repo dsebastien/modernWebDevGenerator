@@ -9,9 +9,6 @@ typings/*
 !typings/typescriptApp.d.ts
 !typings/custom.d.ts
 
-# JS files in the app folder: only TS code allowed, which is transpiled to ES2015 (TS) then to ES5 (Babel)
-app/**/*.js
-
 # NPM
 node_modules
 
