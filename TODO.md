@@ -22,9 +22,6 @@
   * generated project content
   * options
 * add docker support
-* add watch task
-  * build, check code style, code quality, run tests
-  * https://github.com/gulpjs/gulp/blob/master/docs/recipes/mocha-test-runner-with-gulp.md
 * add npm shrinkwrap for this project
 * add code coverage check
 * finalize/test Makefile
