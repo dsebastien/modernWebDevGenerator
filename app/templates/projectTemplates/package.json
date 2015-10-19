@@ -18,23 +18,20 @@
 	"directories": {},
 	"configFile": "jspm.conf.js",
 	"dependencies": {
-	  "angular2": "npm:angular2@^2.0.0-alpha.37",
-	  "es6-shim": "github:es-shims/es6-shim@^0.32.3",
-	  "reflect-metadata": "npm:reflect-metadata@^0.1.1",
-	  "rx": "npm:rx@3.1.1",
-	  "zone.js": "npm:zone.js@^0.5.4",
+	  "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.6",
+	  "angular2": "npm:angular2@^2.0.0-alpha.44",
+	  "reflect-metadata": "npm:reflect-metadata@^0.1.2",
 	  "normalize.css": "github:necolas/normalize.css@^3.0.3"
 	},
 	"devDependencies": {
 	  "babel": "npm:babel-core@^5.8.25",
 	  "babel-runtime": "npm:babel-runtime@^5.8.25",
-	  "core-js": "npm:core-js@^1.1.4",
-	  "traceur": "github:jmcriffey/bower-traceur@0.0.90",
-	  "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.90"
+	  "core-js": "npm:core-js@^1.1.4"
 	}
   },
   "dependencies": {
-
+	"angular2": "2.0.0-alpha.44",
+	"reflect-metadata": "0.1.2"
   },
   "devDependencies": {
 	"nodemon": "1.4.x",
@@ -42,7 +39,7 @@
 	"babel-core": "5.8.x",
 	"babel-runtime": "5.8.x",
 	"gulp": "3.9.x",
-	"modern-web-dev-build": "0.0.7"
+	"modern-web-dev-build": "0.0.8"
   },
   "engines": {
 	"node": ">=0.12.0",

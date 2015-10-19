@@ -5,19 +5,18 @@
 	"module": "commonjs",
 	"declaration": false,
 	"noImplicitAny": false,
-	"removeComments": true,
-	"noLib": false,
+	"suppressImplicitAnyIndexErrors": true,
+	"removeComments": false,
 	"emitDecoratorMetadata": true,
 	"experimentalDecorators": true,
-	"experimentalAsyncFunctions": true,
-	"noResolve": true,
 	"noEmitOnError": false,
 	"preserveConstEnums": true,
 	"inlineSources": false,
 	"sourceMap": false,
 	"outDir": "./.tmp",
+	"project": "./app",
 	"moduleResolution": "node",
-	"project": "./app"
+	"listFiles": false
   },
   "formatCodeOptions": {
 	"indentSize": 2,

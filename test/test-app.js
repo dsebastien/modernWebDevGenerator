@@ -34,7 +34,6 @@ describe("modern-web-dev:app", () =>{
 			"gulpfile.babel.js",
 			"jspm.conf.js",
 			"tsconfig.json",
-			"tsd.json",
 			"tslint.json"
 		]);
 	});

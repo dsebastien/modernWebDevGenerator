@@ -8,7 +8,6 @@
 	"value": "\t",
 	"includeEmptyLines": false
   },
-  "validateLineBreaks": "LF",
   "validateNewlineAfterArrayElements": {
 	"maximum": 2
   },

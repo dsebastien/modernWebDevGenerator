@@ -1,3 +1,7 @@
+* remove reflect-metadata and angular2 npm dependencies once ts supports a way to add paths for module resolution (like jspm) in tsconfig.json
+* put back old paths to modules (e.g., core/...) once TS can find its way with this
+* still need jspm paths (core, components, pages) ?
+* need 'declaration: true' in tsconfig?
 * update to latest Angular version
   * remove useless typings
 	* https://docs.google.com/document/d/1LvPBh7yxmjr7N1vCQ-kBj4guZGfGLBiz44CfenOX6o0/preview
@@ -5,7 +9,7 @@
 * check out https://github.com/babel/generator-babel-boilerplate/blob/master/app/index.js
 * if argument is provided: don't prompt
 * add dependency versions check (same for mwd & mdl)
-  *     "npm-check": "4.1.0"
+  *     "npm-check": "4.1.0"	
   * var npmCheck = require("npm-check");
   * also add to generator after installation
 * add scripts (dependent of ModernWebDevBuild improvements)
