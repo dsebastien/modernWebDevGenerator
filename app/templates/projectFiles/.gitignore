@@ -3,6 +3,7 @@ dist
 .tmp
 *.log
 *.map
+*.d.ts
 !typings
 typings/*
 !typings/tsd.d.ts

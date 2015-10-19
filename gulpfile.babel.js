@@ -8,7 +8,6 @@
 
  Principle taken from gulp-starter: https://github.com/greypants/gulp-starter
  */
-
 "use strict";
 
 let gulp = require("gulp");
