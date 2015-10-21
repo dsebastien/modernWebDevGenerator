@@ -4,7 +4,7 @@
 import "reflect-metadata";
 
 // import Angular 2
-import {Component, View, CORE_DIRECTIVES, bind, bootstrap} from "angular2/angular2";
+import {Component, CORE_DIRECTIVES, bind, bootstrap} from "angular2/angular2";
 import {Http, HTTP_PROVIDERS} from "angular2/http";
 
 // import Angular 2 Component Router
@@ -19,23 +19,17 @@ import {Home} from "../pages/home/home";
 //import {appServicesInjectables} from "core/services/services";
 
 @Component({
-	selector: "app"
-})
-@View({
+	selector: "app",
 	templateUrl: "core/core.bootstrap.template.html", //template: "<router-outlet></router-outlet>",
 	directives: [CORE_DIRECTIVES, RouterOutlet, RouterLink]
 })
 @RouteConfig([
-	//TODO put back the old syntax (comment below) once the typings are correct
-	// reference: https://github.com/angular/angular/issues/3637
-	// fix could land w/ 36+
 	<Route>{path: "/", component: Home, as: "Home", data: undefined, loader: undefined, redirectTo: undefined} // the as serves as alias for links, etc
 	/*
 	new Route({path: "/Home", component: Home, as: "Home", data: undefined, loader: undefined, redirectTo: undefined}) // the as serves as alias for links, etc
 	*/
 ])
 class App {
-
 	constructor() {
 		console.log("Application bootstrapped!");
 	}

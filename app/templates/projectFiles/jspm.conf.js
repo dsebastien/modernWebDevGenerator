@@ -4,10 +4,7 @@ System.config({
 	transpiler: "none",
 	paths: {
 		"github:*": "jspm_packages/github/*",
-		"npm:*": "jspm_packages/npm/*",
-		"core/*": "./.tmp/core/*",
-		"components/*": "./.tmp/components/*",
-		"pages/*": "./.tmp/pages/*"
+		"npm:*": "jspm_packages/npm/*"
 	},
 
 	map: {

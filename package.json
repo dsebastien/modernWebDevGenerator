@@ -36,7 +36,7 @@
 	"create",
 	"init"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
 	"yeoman-generator": "0.20.x",
 	"yosay": "1.0.x",
@@ -83,10 +83,10 @@
 	"clean": "gulp clean",
 	"build": "gulp",
 	"test": "gulp test",
-	"update": "npm install --no-optional",
+	"update": "npm install",
 	"outdated": "npm outdated",
 	"help": "gulp help",
-	"setup": "npm install --no-optional",
+	"setup": "npm install",
 	"prepublish": "npm run build"
   }
 }

@@ -227,6 +227,7 @@ let modernWebDevGenerator = yeoman.Base.extend({
 		if(skipInstall){
 			this.log("Run 'npm run setup' to install all required dependencies. Check out the README file instructions");
 		} else{
+			this.log("Go grab a coffee, I'll start installing the dependencies... (which may take a while)");
 			this.spawnCommand("npm", [ "run", "setup" ]);
 		}
 	}

@@ -16,9 +16,16 @@ This generator includes all the folders & files listed by [ModernWebDevBuild](ht
 
 The generated projects also include:
 * a working setup of Angular 2 (this might later move to a separate sub-generator)
-* a good [HTML5 boiletplate](https://html5boilerplate.com/)
-* a good SASS & styling starting point & embedded design guidelines
+  * a root component (app/core/core.bootstrap.ts)
+  * a home page (app/pages/home.ts)
+  * a basic component router configuration
+* a good [HTML5 boilerplate](https://html5boilerplate.com/)
+* a good SASS & styling starting point
+* an embedded folder structure and design guidelines (componentization, separation of concerns, naming conventions, ...)
+* a set of TypeScript code style/quality rules (tshint.json)
+* a set of ES2015 compliant code style/quality rules (.jscsrc and .jshintrc)
 * nice Apache server configs
+* ...
 
 The general idea is that you can remove anything you don't need assuming it's not in the list of mandatory folders/files of [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) (otherwise you'll break the build ^^).
 
@@ -45,18 +52,18 @@ Check out the current [TODO list](TODO.md)
 In order to use this generator you first need to install Yeoman:
 
 ```bash
-npm -g install yo
+npm --global install yo
 ```
 
 Once Yeoman is installed, you can install this generator:
 
 ```bash
-npm install -g generator-modern-web-dev
+npm install --global generator-modern-web-dev
 ```
 
 You will also need to install gulp, babel & babel-core (CLI) globally: 
 ```bash
-npm install --global gulp babel babel-core --no-optional
+npm install --global gulp babel babel-core
 ```
 
 Create a new folder, go into it then invoke the generator by running the following command:
@@ -72,10 +79,12 @@ npm run serve
 
 Enjoy!
 
+Note that the [ModernWebDevBuild](https://www.npmjs.com/package/modern-web-dev-build) project has other tricks in store for you, be sure to check out [the docs](https://www.npmjs.com/package/modern-web-dev-build). 
+
 ## Options
 There are two main approaches to use this generator:
 * interactive mode: the generator asks you all the questions
-* batch model: you provide the information directly to the generator
+* batch mode: you provide the information directly to the generator
 
 In practice nothing prevents you from mixing both though :)
 If you pass a setting directly to the generator, it will not prompt you for that value. 
@@ -142,7 +151,7 @@ If you want to build from source, you need to:
 * install NodeJS and npm
 * clone this git repository
 * install gulp: `npm install --global gulp`
-* install babel: `npm install --global babel-core`
+* install babel: `npm install --global babel babel-core`
 * run `npm run setup`
 * start hacking :)
 
