@@ -61,7 +61,7 @@ Once Yeoman is installed, you can install this generator:
 npm install --global generator-modern-web-dev
 ```
 
-You will also need to install gulp, babel & babel-core (CLI) globally: 
+You will also need to install gulp, babel & babel-core (CLI) globally:
 ```bash
 npm install --global gulp babel babel-core
 ```
@@ -71,7 +71,7 @@ Create a new folder, go into it then invoke the generator by running the followi
 yo modern-web-dev
 ```
 
-Once you've answered all the questions, the generator will do its thing. 
+Once you've answered all the questions, the generator will do its thing.
 Once done, you'll be able to run the development web server and start hacking away using:
 ```bash
 npm run serve
@@ -79,7 +79,7 @@ npm run serve
 
 Enjoy!
 
-Note that the [ModernWebDevBuild](https://www.npmjs.com/package/modern-web-dev-build) project has other tricks in store for you, be sure to check out [the docs](https://www.npmjs.com/package/modern-web-dev-build). 
+Note that the [ModernWebDevBuild](https://www.npmjs.com/package/modern-web-dev-build) project has other tricks in store for you, be sure to check out [the docs](https://www.npmjs.com/package/modern-web-dev-build).
 
 ## Options
 There are two main approaches to use this generator:
@@ -87,11 +87,11 @@ There are two main approaches to use this generator:
 * batch mode: you provide the information directly to the generator
 
 In practice nothing prevents you from mixing both though :)
-If you pass a setting directly to the generator, it will not prompt you for that value. 
+If you pass a setting directly to the generator, it will not prompt you for that value.
 
 You can list all the options with a brief description using `yo modern-web-dev --help`.
 
-By default, the generator will install all project dependencies (not the global requirements listed in the 'Usage' section!). You can skip the installation of the project dependencies by passing the `--skip-install` option. 
+By default, the generator will install all project dependencies (not the global requirements listed in the 'Usage' section!). You can skip the installation of the project dependencies by passing the `--skip-install` option.
 
 ## Generated projects dev dependencies
 * [gulp](http://gulpjs.com/): JavaScript task runner
@@ -131,7 +131,6 @@ Here's some high level information about these:
 * tsconfig.json: TypeScript compiler configuration. Contains all compiler options, code style rules and file selection/exclusion rules (bypassed by the gulp-typescript plugin!)
   * http://json.schemastore.org/tsconfig
   * https://github.com/Microsoft/TypeScript/wiki/tsconfig.json
-* tsd.json: TypeScript's DefinitelyTyped (tsd) definitions configuration (more information: https://github.com/DefinitelyTyped/tsd)
 * tslint.json: TypeScript code style configuration (more information: https://www.npmjs.com/package/tslint)
 * Makefile: for \*NIX afficionados
 
