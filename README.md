@@ -46,7 +46,8 @@ Please note that this project is heavily inspired from:
 * Many others I'm forgetting :(
 
 ## Status & roadmap
-Check out the current [TODO list](TODO.md)
+Check out the issues & labels to get an idea of what's next.
+For existing features, refer to the previous section.
 
 ## Usage
 In order to use this generator you first need to install Yeoman:
