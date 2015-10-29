@@ -1,3 +1,5 @@
+* 0.0.4
+  * added a missing dependency (#27)
 * 0.0.3
   * use the last modern-web-dev-build version
   * removed typings & tsd usage entirely
