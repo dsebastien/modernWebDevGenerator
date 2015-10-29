@@ -1,3 +1,5 @@
+* 0.0.5
+  * updated for Angular 2 alpha 45
 * 0.0.4
   * added a missing dependency (#27)
 * 0.0.3
