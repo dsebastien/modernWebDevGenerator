@@ -1,6 +1,7 @@
 "use strict";
 
 // import Angular2 deps
+import "zone.js";
 import "reflect-metadata";
 
 // import Angular 2

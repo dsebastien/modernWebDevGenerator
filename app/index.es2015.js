@@ -1,5 +1,7 @@
 "use strict";
 
+const packageJSON = require('../package.json');
+
 import yeoman from "yeoman-generator";
 import yosay  from "yosay";
 import chalk from "chalk";
@@ -109,7 +111,7 @@ let modernWebDevGenerator = yeoman.Base.extend({
 		let done = this.async();
 
 		// Have Yeoman greet the user.
-		this.log(yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator"));
+		this.log(yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator (v"+packageJSON.version+")"));
 
 		const prompts = [
 			{
