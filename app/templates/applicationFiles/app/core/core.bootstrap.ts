@@ -25,10 +25,8 @@ import {Home} from "../pages/home/home";
 	directives: [CORE_DIRECTIVES, RouterOutlet, RouterLink]
 })
 @RouteConfig([
-	<Route>{path: "/", component: Home, as: "Home", data: undefined, loader: undefined, redirectTo: undefined} // the as serves as alias for links, etc
-	/*
-	new Route({path: "/Home", component: Home, as: "Home", data: undefined, loader: undefined, redirectTo: undefined}) // the as serves as alias for links, etc
-	*/
+	{ path: "/", component: Home, as: "Home", data: undefined } // the as serves as alias for links, etc
+	//new Route({path: "/Home", component: Home, as: "Home", data: undefined}) // same but written differently
 ])
 class App {
 	constructor() {
