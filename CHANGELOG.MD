@@ -1,3 +1,5 @@
+* 0.0.7
+  * updated for Angular 2 alpha 46
 * 0.0.6
   * added missing zone.js import. Fixes #28
   * display the version number on execution

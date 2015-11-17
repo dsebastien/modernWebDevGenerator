@@ -1,6 +1,6 @@
 {
   "name": "generator-modern-web-dev",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Modern Web Development Yeoman Generator: Gulp, ES2015, TypeScript, Angular 2, SASS, Minification, Bundling, Sourcemaps, ...",
   "author": {
 	"name": "Sebastien Dubois",
@@ -38,27 +38,27 @@
 	"init"
   ],
   "dependencies": {
-	"yeoman-generator": "0.20.x",
+	"yeoman-generator": "0.21.x",
 	"yosay": "1.0.x",
 	"chalk": "1.1.x",
 	"babel-runtime": "5.8.x"
   },
   "devDependencies": {
-	"babel": "5.8.x",
-	"babel-core": "5.8.x",
+	"babel": "6.1.x",
+	"babel-core": "6.1.x",
 	"gulp": "3.9.x",
 	"mocha": "2.3.x",
 	"run-sequence": "1.1.x",
 	"require-dir": "0.3.x",
 	"del": "2.0.x",
-	"gulp-babel": "5.2.x",
+	"gulp-babel": "6.1.x",
 	"gulp-changed": "1.3.x",
 	"gulp-debug": "2.1.x",
 	"gulp-help": "1.6.x",
 	"gulp-if": "2.0.x",
 	"gulp-jscs": "3.0.x",
 	"gulp-jscs-stylish": "1.2.x",
-	"gulp-jshint": "1.11.x",
+	"gulp-jshint": "1.12.x",
 	"jshint-stylish": "2.0.x",
 	"gulp-mocha": "2.1.x",
 	"gulp-nice-package": "1.0.x",
