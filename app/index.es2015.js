@@ -59,7 +59,7 @@ const descriptors = {
 
 let modernWebDevGenerator = yeoman.Base.extend({
 
-	constructor: function(){
+	constructor: function () {
 		// Setup the base generator
 		yeoman.Base.apply(this, arguments);
 
@@ -107,11 +107,11 @@ let modernWebDevGenerator = yeoman.Base.extend({
 	},
 
 	// contexts list: http://yeoman.io/authoring/running-context.html
-	prompting: function(){
+	prompting: function () {
 		let done = this.async();
 
 		// Have Yeoman greet the user.
-		this.log(yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator (v"+packageJSON.version+")"));
+		this.log(yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator (v" + packageJSON.version + ")"));
 
 		const prompts = [
 			{
@@ -164,7 +164,7 @@ let modernWebDevGenerator = yeoman.Base.extend({
 			}
 		];
 
-		this.prompt(prompts, answers =>{
+		this.prompt(prompts, answers => {
 			this.props = answers; // to access props later use this.props.someOption;
 
 			done();
@@ -172,12 +172,12 @@ let modernWebDevGenerator = yeoman.Base.extend({
 	},
 
 	configuring: {
-		projectFiles: function(){
+		projectFiles: function () {
 			// copy files that do not need pre-processing
 			this.directory("./projectFiles/", ".");
 		},
 
-		projectTemplates: function(){
+		projectTemplates: function () {
 			const projectTemplatesFolder = "./projectTemplates/";
 
 			// copy all files that need specific processing
@@ -193,12 +193,12 @@ let modernWebDevGenerator = yeoman.Base.extend({
 	},
 
 	writing: {
-		applicationFiles: function(){
+		applicationFiles: function () {
 			// copy files that do not need pre-processing
 			this.directory("./applicationFiles/", ".");
 		},
 
-		applicationTemplates: function(){
+		applicationTemplates: function () {
 			const applicationTemplatesFolders = "./applicationTemplates/";
 
 			// copy all files that need specific processing
@@ -221,20 +221,20 @@ let modernWebDevGenerator = yeoman.Base.extend({
 		}
 	},
 
-	install: function(){
-		const skipInstall = this.options[ "skip-install" ];
+	install: function () {
+		const skipInstall = this.options["skip-install"];
 
 		this.log("Project created successfully. Enjoy!");
 
-		if(skipInstall){
+		if (skipInstall) {
 			this.log("Run 'npm run setup' to install all required dependencies. Check out the README file instructions");
-		} else{
+		} else {
 			this.log("Go grab a coffee, I'll start installing the dependencies... (which may take a while)");
-			this.spawnCommand("npm", [ "run", "setup" ]);
+			this.spawnCommand("npm", ["run", "setup"]);
 		}
 	}
 
 	// contexts: initializing, prompting, configuring, default, writing, conflicts, install, end
 });
 
-module.exports = modernWebDevGenerator;
+export default modernWebDevGenerator;

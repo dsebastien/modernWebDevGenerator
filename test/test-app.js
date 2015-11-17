@@ -5,11 +5,9 @@ const path = require("path");
 const assert = require("yeoman-generator").assert;
 const helpers = require("yeoman-generator").test;
 
-const config = require("../gulp/config");
-
 describe("modern-web-dev:app", () =>{
 	before((done) =>{
-		helpers.run(path.join(__dirname, "../" + config.folders.dist)) // jshint ignore:line
+		helpers.run(path.join(__dirname, "../app")) // jshint ignore:line
 			.withOptions({
 				skipInstall: true
 			})

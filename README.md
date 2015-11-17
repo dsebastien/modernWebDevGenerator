@@ -151,7 +151,7 @@ If you want to build from source, you need to:
 * install NodeJS and npm
 * clone this git repository
 * install gulp: `npm install --global gulp`
-* install babel: `npm install --global babel babel-core`
+* install babel: `npm install --global babel babel-core babel-cli babel-preset-es2015`
 * run `npm run setup`
 * start hacking :)
 
