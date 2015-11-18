@@ -237,4 +237,4 @@ let modernWebDevGenerator = yeoman.Base.extend({
 	// contexts: initializing, prompting, configuring, default, writing, conflicts, install, end
 });
 
-export default modernWebDevGenerator;
+module.exports = modernWebDevGenerator;

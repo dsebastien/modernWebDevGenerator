@@ -62,9 +62,9 @@ Once Yeoman is installed, you can install this generator:
 npm install --global generator-modern-web-dev
 ```
 
-You will also need to install gulp, babel & babel-core (CLI) globally:
+You will also need to install gulp globally:
 ```bash
-npm install --global gulp babel babel-core
+npm install --global gulp
 ```
 
 Create a new folder, go into it then invoke the generator by running the following command:
@@ -151,7 +151,6 @@ If you want to build from source, you need to:
 * install NodeJS and npm
 * clone this git repository
 * install gulp: `npm install --global gulp`
-* install babel: `npm install --global babel babel-core babel-cli babel-preset-es2015`
 * run `npm run setup`
 * start hacking :)
 

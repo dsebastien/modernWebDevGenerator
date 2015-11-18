@@ -1,7 +1,6 @@
 "use strict";
 
 const path = require("path");
-//const os = require("os");
 const assert = require("yeoman-generator").assert;
 const helpers = require("yeoman-generator").test;
 
@@ -12,9 +11,9 @@ describe("modern-web-dev:app", () =>{
 				skipInstall: true
 			})
 			.withPrompts(
-			{
-				someOption: true
-			})
+				{
+					someOption: true
+				})
 			.on("end", done);
 
 		//.withOptions({ foo: 'bar' })    // Mock options passed in

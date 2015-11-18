@@ -1,4 +1,12 @@
 sudo: false
 language: node_js
+cache:
+	directories:
+		- node_modules
+		- jspm_packages
+notifications:
+	email: false
 node_js:
   - '0.12'
+before_script:
+	- npm prune

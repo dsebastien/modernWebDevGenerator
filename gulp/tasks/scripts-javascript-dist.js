@@ -23,11 +23,7 @@ gulp.task("scripts-javascript-dist", "Transpile JavaScript (ES2015 to ES5 using 
 
 		// Transpile ES2015 to ES5
 		// options: https://babeljs.io/docs/usage/options/
-		.pipe(babel({
-			presets: [ "es2015" ],
-			plugins: [ "transform-es2015-modules-commonjs" ],
-			comments: false// remove comments
-		}))
+		.pipe(babel())
 
 		// Display the files in the stream
 		//.pipe(debug({title: "Stream contents:", minimal: true}))
