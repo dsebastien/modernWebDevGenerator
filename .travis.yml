@@ -4,6 +4,9 @@ cache:
   directories:
   - node_modules
   - jspm_packages
+branches:
+  only:
+	- master
 notifications:
   email: false
 node_js:
