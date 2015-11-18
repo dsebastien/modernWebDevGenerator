@@ -1,3 +1,6 @@
+* 0.0.8
+  * now uses modernWebDevBuild 0.1.0
+  * supports Babel 6
 * 0.0.7
   * updated for Angular 2 alpha 46
   * (internal) upgraded to Babel 6
