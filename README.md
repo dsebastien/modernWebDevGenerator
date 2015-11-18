@@ -47,7 +47,9 @@ Please note that this project is heavily inspired from:
 
 ## Status & roadmap
 Check out the issues & labels to get an idea of what's next.
-For existing features, refer to the previous section.
+For existing features, refer to the previous sections.
+
+Take a look at the [CHANGELOG.MD].
 
 ## Usage
 In order to use this generator you first need to install Yeoman:
