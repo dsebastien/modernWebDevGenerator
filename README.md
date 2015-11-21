@@ -37,6 +37,11 @@ Any feedback/contributions are welcome to improve the project so don't hesitate!
 
 This project is available as an NPM package; check out the usage instructions below.
 
+## Demo
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Wc5iTInYOBw
+" target="_blank"><img src="http://img.youtube.com/vi/Wc5iTInYOBw/0.jpg"
+alt="ModernWebDev Build and Generator Demo" width="240" height="180" border="10" /></a>
+
 ## Background
 Please note that this project is heavily inspired from:
 * Google's [Web Starter Kit](https://github.com/google/web-starter-kit)
