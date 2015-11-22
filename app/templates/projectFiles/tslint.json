@@ -1,6 +1,11 @@
 {
   "rules": {
 	"class-name": true,
+	"comment-format": [true,
+	  "check-space",
+	  "check-lowercase"
+	],
+	"jsdoc-format": true,
 	"curly": true,
 	"eofline": true,
 	"forin": true,
