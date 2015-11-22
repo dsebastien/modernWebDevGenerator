@@ -33,6 +33,7 @@
 	"placeOpenBraceOnNewLineForControlBlocks": false
   },
   "filesGlob": [
+	"./typings/*.d.ts",
 	"./app/**/*.ts"
   ],
   "exclude": [

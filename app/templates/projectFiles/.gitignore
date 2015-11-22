@@ -7,8 +7,8 @@ dist
 !typings
 typings/*
 !typings/tsd.d.ts
-!typings/typescriptApp.d.ts
 !typings/custom.d.ts
+!typings/README.md
 
 # NPM
 node_modules

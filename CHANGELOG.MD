@@ -1,3 +1,7 @@
+* 0.0.9
+  * added tsd dependency (necessary for custom typings & typings of libraries not yet specifying their typings through package.json)
+  * added typings folder with split between custom and third party
+  * added tsd in the package.json scripts
 * 0.0.8
   * now uses modernWebDevBuild 0.1.0
   * supports Babel 6

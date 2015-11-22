@@ -138,11 +138,12 @@ Here's some high level information about these:
 * .jshintignore: stuff that JSHint should ignore
 * .travis.yml: Travis CI configuration files (more information: http://docs.travis-ci.com/user/build-configuration/)
 * Dockerfile and DockerfileDev: Docker configuration files used to describe how Docker images should be created for this project (more information: https://www.docker.com/ and http://docs.docker.com/reference/builder/)
-* jspm.conf.js: ...
+* jspm.conf.js: JSPM/SystemJS configuration file
 * runOnDocker.sh and runDevOnDocker.sh: build scripts that create/run Docker images
 * tsconfig.json: TypeScript compiler configuration. Contains all compiler options, code style rules and file selection/exclusion rules (bypassed by the gulp-typescript plugin!)
   * http://json.schemastore.org/tsconfig
   * https://github.com/Microsoft/TypeScript/wiki/tsconfig.json
+* tsd.json: tsd configuration file: list of TypeScript type definitions files to retrieve
 * tslint.json: TypeScript code style configuration (more information: https://www.npmjs.com/package/tslint)
 * Makefile: for \*NIX afficionados
 

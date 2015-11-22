@@ -44,6 +44,7 @@
 	"babel-preset-es2015": "6.1.x",
 	"gulp": "3.9.x",
 	"jspm": "0.16.x",
+	"tsd": "0.6.5",
 	"modern-web-dev-build": "0.1.0"
   },
   "engines": {
@@ -57,9 +58,11 @@
 	"start": "npm run serve",
 	"serve": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve",
 	"serve-dist": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve-dist",
-	"update": "npm install --no-optional && jspm update && jspm dl-loader",
+	"update": "npm install --no-optional && jspm update && jspm dl-loader && npm run tsd",
 	"outdated": "npm outdated",
 	"help": "gulp help",
-	"setup": "npm install --no-optional && jspm install"
+	"tsd": "tsd reinstall --save --overwrite",
+	"tsd-update": "tsd update --save --overwrite",
+	"setup": "npm install --no-optional && jspm install && jspm dl-loader && npm run tsd"
   }
 }
