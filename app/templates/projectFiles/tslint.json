@@ -1,9 +1,6 @@
 {
   "rules": {
 	"class-name": true,
-	"comment-format": [true,
-	  "check-space"
-	],
 	"jsdoc-format": true,
 	"curly": true,
 	"eofline": true,
