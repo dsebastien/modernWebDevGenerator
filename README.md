@@ -122,6 +122,7 @@ The project includes multiple configuration files.
 For more details about the configuration files, check out the [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild)'s documentation.
 
 Here's some high level information about these:
+* .babelrc: Babel configuration file
 * gulpfile.babel.js: gulp's configuration file. This is where the Modern Web Dev Build tasks are loaded
 * package.json: NPM's configuration file. This is where all dependencies are defined: project ones under 'jspm' and build-related ones under 'devDependencies' (more information: https://docs.npmjs.com/files/package.json)
 * .dockerignore: files that are ignored by Docker when creating images
