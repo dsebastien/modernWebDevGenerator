@@ -16,6 +16,8 @@ ModernWebDevGenerator is a [Yeoman](http://yeoman.io/) generator that will help 
 
 Projects created with this Yeoman Generator will be able to directly leverage the awesome Gulp-based build provided by the [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) project, which includes many tasks and features out of the box (e.g., transpilation of TypeScript/ES2015 to ES5, SASS transpilation to CSS, Minification, Bundling, Code quality & code style checks, Sourcemaps, ...).
 
+This project comes with a fully working Angular 2 configuration.
+
 This generator includes all the folders & files listed by [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) as mandatory as well as the recommended ones so as to promote good practices. README.md files are placed in multiple locations to describe what to put where, provide some guidance/design guidelines, ...
 
 The generated projects also include:

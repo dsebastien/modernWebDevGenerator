@@ -1,4 +1,5 @@
-* 0.0.9
+* 0.1.0
+  * fix for #33 avoid the need for installing dependencies globally
   * added tsd dependency (necessary for custom typings & typings of libraries not yet specifying their typings through package.json)
   * added typings folder with split between custom and third party
   * added tsd in the package.json scripts
