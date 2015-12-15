@@ -5,7 +5,7 @@ cache:
   - node_modules
   - jspm_packages
 notifications:
-  email: false
+  email: true
 node_js:
   - '4.2'
 before_script:
