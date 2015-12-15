@@ -5,7 +5,7 @@ import "zone.js";
 import "reflect-metadata";
 
 // import Angular 2
-import {Component, CORE_DIRECTIVES, bind, bootstrap} from "angular2/angular2";
+import {Component, CORE_DIRECTIVES, provide, bootstrap} from "angular2/angular2";
 import {Http, HTTP_PROVIDERS} from "angular2/http";
 
 // import Angular 2 Component Router
@@ -42,9 +42,9 @@ bootstrap(App, [
 	//appServicesInjectables, // alternative way of filling the injector with all the classes we want to be able to inject
 	ROUTER_PROVIDERS,
 	HTTP_PROVIDERS,
-	bind(LocationStrategy).toClass(PathLocationStrategy) // enables the following: /#/<component_name> rather than /<component_name>
+	provide(LocationStrategy, { useClass: PathLocationStrategy }) // enables the following: /#/<component_name> rather than /<component_name>
 	//todo replace with
-	//bind(LocationStrategy).toClass(HTML5LocationStrategy) // enable HTML5 history API location strategy
+	//provide(LocationStrategy, { useClass: HTML5LocationStrategy }) // enable HTML5 history API location strategy
 
 ]).then(
 	success => console.log("Bootstrap successful"),
