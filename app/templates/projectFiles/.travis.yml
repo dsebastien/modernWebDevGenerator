@@ -10,6 +10,5 @@ node_js:
   - '4.2'
 before_script:
   - npm prune
-  - npm dedupe
 before_install:
   - npm run setup
