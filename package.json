@@ -37,7 +37,7 @@
     "init"
   ],
   "dependencies": {
-    "yeoman-generator": "0.21.x",
+    "yeoman-generator": "0.22.x",
     "yosay": "1.1.x",
     "chalk": "1.1.x",
     "babel-runtime": "6.3.x"
