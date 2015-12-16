@@ -2,67 +2,71 @@
   "name": "<%= projectName %>",
   "description": "<%= projectDescription %>",
   "author": {
-	"name": "<%= projectOwner %>",
-	"email": "<%= projectOwnerMail %>",
-	"url": "<%= projectOwnerURL %>"
+    "name": "<%= projectOwner %>",
+    "email": "<%= projectOwnerMail %>",
+    "url": "<%= projectOwnerURL %>"
   },
   "contributors": [
   ],
   "homepage": "<%= projectURL %>",
   "keywords": [
-	"web"
+    "web"
   ],
   "private": true,
   "version": "0.0.1",
   "jspm": {
-	"directories": {},
-	"configFile": "jspm.conf.js",
-	"dependencies": {
-		"babel-runtime": "npm:babel-runtime@^6.1.18",
-		"@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.7",
-		"angular2": "npm:angular2@^2.0.0-alpha.46",
-		"normalize.css": "github:necolas/normalize.css@^3.0.3",
-		"reflect-metadata": "npm:reflect-metadata@^0.1.2",
-		"zone.js": "npm:zone.js@^0.5.8"
-	},
-	"devDependencies": {
-	  "babel": "npm:babel-core@^6.1.21",
-	  "core-js": "npm:core-js@^1.1.4"
-	}
+    "directories": {},
+    "configFile": "jspm.conf.js",
+    "dependencies": {
+      "babel-runtime": "npm:babel-runtime@^6.3.13",
+      "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.7",
+      "angular2": "npm:angular2@^2.0.0-alpha.46",
+      "normalize.css": "github:necolas/normalize.css@^3.0.3",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.2",
+      "zone.js": "npm:zone.js@^0.5.10"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^6.3.13",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   },
   "dependencies": {
-	"babel-runtime": "6.1.x",
-	"angular2": "2.0.0-alpha.46",
-	"@reactivex/rxjs": "5.0.0-alpha.7",
-	"reflect-metadata": "0.1.2",
-	"zone.js": "0.5.8"
+    "babel-runtime": "6.3.x",
+    "angular2": "2.0.0-alpha.46",
+    "@reactivex/rxjs": "5.0.0-alpha.7",
+    "reflect-metadata": "0.1.2",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
-	"nodemon": "1.8.x",
-	"babel-core": "6.1.x",
-	"babel-plugin-transform-es2015-modules-commonjs": "6.1.x",
-	"babel-preset-es2015": "6.1.x",
-	"tsd": "0.6.5",
-	"modern-web-dev-build": "0.1.1"
+    "babel-core": "6.3.x",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.3.x",
+    "babel-preset-es2015": "6.3.x",
+    "gulp": "3.9.x",
+    "jspm": "0.16.x",
+    "nodemon": "1.8.x",
+    "typescript": "1.7.3",
+    "modern-web-dev-build": "0.1.1",
+    "jasmine-core": "2.4.x",
+    "karma-jasmine": "0.3.x",
+    "tsd": "0.6.5"
   },
   "engines": {
-	"node": ">=4.2.1",
-	"npm": ">=2.0.0"
+    "node": ">=4.2.1",
+    "npm": ">=2.0.0"
   },
   "scripts": {
-	"clean": "gulp clean",
-	"compile": "gulp",
-	"build": "npm run compile && npm run test",
-	"test": "gulp prepare-test-unit && gulp test-unit",
-	"start": "npm run serve",
-	"serve": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve",
-	"serve-dist": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve-dist",
-	"update": "npm install --no-optional && jspm update && jspm dl-loader && npm run tsd",
-	"outdated": "npm outdated",
-	"help": "gulp help",
-	"tsd": "tsd reinstall --save --overwrite",
-	"tsd-update": "tsd update --save --overwrite",
-	"setup": "npm install --no-optional && jspm install && jspm dl-loader && npm run tsd",
-	"prepublish": "npm run build"
+    "clean": "gulp clean",
+    "compile": "gulp",
+    "build": "npm run compile && npm run test",
+    "test": "gulp prepare-test-unit && gulp test-unit",
+    "start": "npm run serve",
+    "serve": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve",
+    "serve-dist": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve-dist",
+    "update": "npm install --no-optional && jspm update && jspm dl-loader && npm run tsd",
+    "outdated": "npm outdated",
+    "help": "gulp help",
+    "tsd": "tsd reinstall --save --overwrite",
+    "tsd-update": "tsd update --save --overwrite",
+    "setup": "npm install --no-optional && jspm install && jspm dl-loader && npm run tsd"
   }
 }

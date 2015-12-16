@@ -14,7 +14,7 @@ https://coveralls.io/github/dsebastien/modernWebDevGenerator?branch=master
 ## About
 ModernWebDevGenerator is a [Yeoman](http://yeoman.io/) generator that will help you quickly get up and running with [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild).
 
-Projects created with this Yeoman Generator will be able to directly leverage the awesome Gulp-based build provided by the [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) project, which includes many tasks and features out of the box (e.g., transpilation of TypeScript/ES2015 to ES5, SASS transpilation to CSS, Minification, Bundling, Code quality & code style checks, Sourcemaps, ...).
+Projects created with this Yeoman Generator will be able to directly leverage the awesome Gulp-based build provided by the [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) project, which includes many tasks and features out of the box (e.g., transpilation of TypeScript/ES2015 to ES5, SASS transpilation to CSS, Minification, Bundling, Code quality & code style checks, Sourcemaps, support for unit testing, ...).
 
 This project comes with a fully working Angular 2 configuration.
 
@@ -30,7 +30,6 @@ The generated projects also include:
 * an embedded folder structure and design guidelines (componentization, separation of concerns, naming conventions, ...)
 * a set of TypeScript code style/quality rules (tshint.json)
 * a set of ES2015 compliant code style/quality rules (.jscsrc and .jshintrc)
-* nice Apache server configs
 * ...
 
 The general idea is that you can remove anything you don't need assuming it's not in the list of mandatory folders/files of [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild) (otherwise you'll break the build ^^).
@@ -40,6 +39,7 @@ Any feedback/contributions are welcome to improve the project so don't hesitate!
 This project is available as an NPM package; check out the usage instructions below.
 
 ## Demo
+Click on this link to see a demo of how to install & use this project and the modern web dev build:
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Wc5iTInYOBw
 " target="_blank"><img src="http://img.youtube.com/vi/Wc5iTInYOBw/0.jpg"
 alt="ModernWebDev Build and Generator Demo" width="240" height="180" border="10" /></a>
@@ -66,7 +66,7 @@ Check out the [change log](CHANGELOG.MD)
 In order to use this generator you first need to install Yeoman:
 
 ```bash
-npm --global install yo
+npm install --global yo
 ```
 
 Once Yeoman is installed, you can install this generator:
@@ -93,7 +93,7 @@ npm run serve
 
 Enjoy!
 
-Note that the [ModernWebDevBuild](https://www.npmjs.com/package/modern-web-dev-build) project has other tricks in store for you, be sure to check out [the docs](https://www.npmjs.com/package/modern-web-dev-build).
+Note that the [ModernWebDevBuild](https://www.npmjs.com/package/modern-web-dev-build) project has other tricks in store for you; be sure to check out [the docs](https://www.npmjs.com/package/modern-web-dev-build).
 
 ## Options
 There are two main approaches to use this generator:
@@ -142,6 +142,7 @@ Here's some high level information about these:
 * .travis.yml: Travis CI configuration files (more information: http://docs.travis-ci.com/user/build-configuration/)
 * Dockerfile and DockerfileDev: Docker configuration files used to describe how Docker images should be created for this project (more information: https://www.docker.com/ and http://docs.docker.com/reference/builder/)
 * jspm.conf.js: JSPM/SystemJS configuration file
+* karma.conf.js: Karma test runner configuration file
 * runOnDocker.sh and runDevOnDocker.sh: build scripts that create/run Docker images
 * tsconfig.json: TypeScript compiler configuration. Contains all compiler options, code style rules and file selection/exclusion rules (bypassed by the gulp-typescript plugin!)
   * http://json.schemastore.org/tsconfig
@@ -152,9 +153,12 @@ Here's some high level information about these:
 
 ## Adding project dependencies
 As you go along, you'll surely need to add new dependencies for your application. If the dependency you want to add is required at runtime, then you should use JSPM to add it.
-Installing a dependency with JSPM is as simple as `jspm install x`.
+Installing a dependency with JSPM is as simple as `jspm install x`. For more information about JSPM, check out the official site: http://jspm.io/
 
 ## Contributing
+Take a look at the project's open [issues](https://github.com/dsebastien/modernWebDevGenerator/issues) and [milestones](https://github.com/dsebastien/modernWebDevGenerator/milestones).
+
+If you know what to do then:
 * Fork the project
 * Create a feature branch in your fork
 * Rebase if needed to keep the project history clean
@@ -163,7 +167,7 @@ Installing a dependency with JSPM is as simple as `jspm install x`.
 
 ## Building from source
 If you want to build from source, you need to:
-* install NodeJS and npm
+* install NodeJS (4.2+) and npm (3+)
 * clone this git repository
 * install gulp: `npm install --global gulp`
 * run `npm run setup`

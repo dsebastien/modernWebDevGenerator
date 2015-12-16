@@ -1,8 +1,11 @@
 * 0.1.0
+  * now uses modernWebDevBuild 0.1.1
+  * added unit testing support (with Karma, Jasmine and JSPM/SystemJS) (closes #37)
   * fix for #33 avoid the need for installing dependencies globally
-  * added tsd dependency (necessary for custom typings & typings of libraries not yet specifying their typings through package.json)
-  * added typings folder with split between custom and third party
-  * added tsd in the package.json scripts
+  * added tsd back: necessary for custom typings & typings of libraries not yet specifying their typings through package.json
+    * this _will_ be replaced by the typings library in a next release
+    * added typings folder with split between custom and third party
+    * added tsd related scripts in package.json
 * 0.0.8
   * now uses modernWebDevBuild 0.1.0
   * supports Babel 6
