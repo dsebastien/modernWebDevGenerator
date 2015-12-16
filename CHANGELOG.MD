@@ -2,6 +2,7 @@
   * now uses modernWebDevBuild 0.1.1
   * added unit testing support (with Karma, Jasmine and JSPM/SystemJS) (closes #37)
   * fix for #33 avoid the need for installing dependencies globally
+  * enabled noImplicitAny by default (closes #41)
   * added tsd back: necessary for custom typings & typings of libraries not yet specifying their typings through package.json
     * this _will_ be replaced by the typings library in a next release
     * added typings folder with split between custom and third party
