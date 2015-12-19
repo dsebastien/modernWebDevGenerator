@@ -42,12 +42,16 @@
 		Loading ...
 	</app>
 
+	<!--
+		Angular 2 polyfills (zone.js, reflect-metadata, ...) must be loaded BEFORE SystemJS
+	-->
+	<script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
 	<!-- build:js-app -->
 	<!-- for production, this is all replaced by a minified bundle -->
 	<script src="jspm_packages/system.src.js"></script>
 	<script src="jspm.conf.js"></script>
 	<script>
-		System.import('core/core.bootstrap').catch(console.error.bind(console));
+		System.import('core/boot').catch(console.error.bind(console));
 	</script>
 	<!-- endbuild -->
 </body>

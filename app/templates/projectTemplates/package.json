@@ -19,11 +19,9 @@
     "configFile": "jspm.conf.js",
     "dependencies": {
       "babel-runtime": "npm:babel-runtime@^6.3.13",
-      "@reactivex/rxjs": "npm:@reactivex/rxjs@^5.0.0-alpha.7",
-      "angular2": "npm:angular2@^2.0.0-alpha.46",
-      "normalize.css": "github:necolas/normalize.css@^3.0.3",
-      "reflect-metadata": "npm:reflect-metadata@^0.1.2",
-      "zone.js": "npm:zone.js@^0.5.10"
+      "rxjs": "npm:@reactivex/rxjs@^5.0.0-beta.0",
+      "angular2": "npm:angular2@^2.0.0-beta.0",
+      "normalize.css": "github:necolas/normalize.css@^3.0.3"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^6.3.13",
@@ -32,10 +30,11 @@
   },
   "dependencies": {
     "babel-runtime": "6.3.x",
-    "angular2": "2.0.0-alpha.46",
-    "@reactivex/rxjs": "5.0.0-alpha.7",
     "reflect-metadata": "0.1.2",
-    "zone.js": "0.5.10"
+    "zone.js": "0.5.10",
+    "es6-shim": "0.33.3",
+    "rxjs": "5.0.0-beta.0",
+    "angular2": "2.0.0-beta.0"
   },
   "devDependencies": {
     "babel-core": "6.3.x",

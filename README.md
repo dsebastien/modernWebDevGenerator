@@ -22,7 +22,7 @@ This generator includes all the folders & files listed by [ModernWebDevBuild](ht
 
 The generated projects also include:
 * a working setup of Angular 2 (this might later move to a separate sub-generator)
-  * a root component (app/core/core.bootstrap.ts)
+  * a root component (app/core/boot.ts)
   * a home page (app/pages/home.ts)
   * a basic component router configuration
 * a good [HTML5 boilerplate](https://html5boilerplate.com/)

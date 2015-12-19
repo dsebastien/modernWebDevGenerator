@@ -1,12 +1,12 @@
 "use strict";
 
 // import Angular 2
-import { Component, CORE_DIRECTIVES } from "angular2/angular2";
+import {Component} from "angular2/core";
 
 @Component({
 	selector: "page-home",
 	templateUrl: "pages/home/home.template.html",
-	directives: [CORE_DIRECTIVES]
+	directives: []
 })
 export class Home {
 

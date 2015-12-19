@@ -1,4 +1,5 @@
 * 0.1.0
+  * supports Angular 2 beta 0
   * now uses modernWebDevBuild 0.1.1
   * added unit testing support (with Karma, Jasmine and JSPM/SystemJS) (closes #37)
   * fix for #33 avoid the need for installing dependencies globally
