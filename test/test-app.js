@@ -1,8 +1,9 @@
 "use strict";
 
 const path = require("path");
-const assert = require("yeoman-generator").assert;
-const helpers = require("yeoman-generator").test;
+
+const assert = require('yeoman-assert');
+const helpers = require('yeoman-test');
 
 describe("modern-web-dev:app", () =>{
 	before((done) =>{
