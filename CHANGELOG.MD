@@ -1,3 +1,7 @@
+* 0.1.3
+  * now uses modernWebDevBuild 0.2.2
+  * disabled HTML minification by default (not supported by Angular 2 anymore: https://github.com/dsebastien/modernWebDevBuild/issues/67)
+  * fixed RxJS dependency in the JSPM configuration (fixes #46)
 * 0.1.2
   * now uses modernWebDevBuild 0.2.1
   * fixes an issue with the production build (see #44)
