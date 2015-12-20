@@ -1,3 +1,5 @@
+* 0.1.1
+  * now uses modernWebDevBuild 0.2.0
 * 0.1.0
   * supports Angular 2 beta 0
   * now uses modernWebDevBuild 0.1.1
@@ -5,9 +7,9 @@
   * fix for #33 avoid the need for installing dependencies globally
   * enabled noImplicitAny by default (closes #41)
   * added tsd back: necessary for custom typings & typings of libraries not yet specifying their typings through package.json
-    * this _will_ be replaced by the typings library in a next release
-    * added typings folder with split between custom and third party
-    * added tsd related scripts in package.json
+	* this _will_ be replaced by the typings library in a next release
+	* added typings folder with split between custom and third party
+	* added tsd related scripts in package.json
   * updated yeoman generator dependency (includes some bug fixes)
 * 0.0.8
   * now uses modernWebDevBuild 0.1.0
