@@ -1,3 +1,6 @@
+* 0.1.2
+  * now uses modernWebDevBuild 0.2.1
+  * fixes an issue with the production build (see #44)
 * 0.1.1
   * now uses modernWebDevBuild 0.2.0
 * 0.1.0
