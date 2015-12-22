@@ -107,6 +107,8 @@ You can list all the options with a brief description using `yo modern-web-dev -
 
 By default, the generator will install all project dependencies (not the global requirements listed in the 'Usage' section!). You can skip the installation of the project dependencies by passing the `--skip-install` option.
 
+The generator will check for updates once in a while but you can disable the update check by passing the following flag: `--no-update-notifier`.
+
 ## Generated projects dev dependencies
 * [gulp](http://gulpjs.com/): JavaScript task runner
 * [babel](https://babeljs.io/): ES2015 to ES5 transpiler. Needed so that the Gulp configuration file can be written using ES2015 (gulpfile.babel.js)

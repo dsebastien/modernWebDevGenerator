@@ -1,10 +1,12 @@
 "use strict";
 
-const packageJSON = require('../package.json');
+const packageJSON = require("../package.json");
 
 import yeoman from "yeoman-generator";
 import yosay  from "yosay";
 import chalk from "chalk";
+import updateNotifier from "update-notifier";
+import stringLength from "string-length";
 
 const descriptors = {
 	projectName: {
@@ -56,6 +58,24 @@ const descriptors = {
 		prompt: "What is the address of the project?"
 	}
 };
+
+function checkForUpdates() {
+	const notifier = updateNotifier({
+		pkg: packageJSON
+		//,updateCheckInterval: 1 // useful for debugging
+	});
+	
+	let message = [];
+	
+	let retVal;
+
+	if (notifier.update) {
+		message.push("Update available: " + chalk.green.bold(notifier.update.latest) + chalk.gray(" (current: " + notifier.update.current + ")"));
+		message.push("Run " + chalk.magenta("npm install -g " + packageJSON.name) + " to update.");
+		retVal = yosay(message.join(" "), {maxLength: stringLength(message[0])});
+	}
+	return retVal;
+}
 
 let modernWebDevGenerator = yeoman.Base.extend({
 
@@ -109,10 +129,17 @@ let modernWebDevGenerator = yeoman.Base.extend({
 	// contexts list: http://yeoman.io/authoring/running-context.html
 	prompting: function () {
 		let done = this.async();
+		
+		const welcomeMessage = yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator (v" + packageJSON.version + ")");
+		const updateMessage = checkForUpdates();
 
-		// Have Yeoman greet the user.
-		this.log(yosay("Welcome to the " + chalk.green("ModernWebDev") + " Yeoman Generator (v" + packageJSON.version + ")"));
-
+		// Have Yeoman greet the user
+		if(updateMessage){
+			this.log(updateMessage);
+		}else{
+			this.log(welcomeMessage);
+		}
+		
 		const prompts = [
 			{
 				type: "input",

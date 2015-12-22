@@ -1,5 +1,8 @@
+* 0.1.4
+  * added a update check: you will be notified whenever a new version of the generator is available
+    * you can disable the update check by passing the following flag: `--no-update-notifier`
 * 0.1.3
-  * now uses modernWebDevBuild 0.2.2
+  * now uses modernWebDevBuild 0.2.x
   * disabled HTML minification by default (not supported by Angular 2 anymore: https://github.com/dsebastien/modernWebDevBuild/issues/67)
   * fixed RxJS dependency in the JSPM configuration (fixes #46)
 * 0.1.2
