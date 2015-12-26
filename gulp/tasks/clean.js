@@ -7,11 +7,11 @@ import del from "del";
 
 import config from "../config";
 
-gulp.task("clean", "Clean", callback =>{
+gulp.task("clean", "Clean", () =>{
 	del([
 			config.files.yeomanGenerator
 		], {
 			dot: true
-		}, callback
+		}
 	);
 });
