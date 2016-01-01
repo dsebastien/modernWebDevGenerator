@@ -7,13 +7,14 @@ import {App} from "./app";
 import {bootstrap} from "angular2/bootstrap";
 import {provide, enableProdMode} from "angular2/core";
 import {HTTP_PROVIDERS} from "angular2/http";
+import {ELEMENT_PROBE_PROVIDERS} from 'angular2/platform/common_dom';
 
 // import Angular 2 Component Router
 // reference: http://blog.thoughtram.io/angular/2015/06/16/routing-in-angular-2.html
 import {LocationStrategy, PathLocationStrategy, ROUTER_PROVIDERS} from "angular2/router";
 
 // enable production mode of Angular
-//enableProdMode();
+// enableProdMode(); // enable for production (also uncomment the import above!)
 
 // bootstrap our app
 console.log("Bootstrapping the App");
@@ -23,6 +24,7 @@ bootstrap(App, [
 	//appServicesInjectables, // alternative way of filling the injector with all the classes we want to be able to inject
 	ROUTER_PROVIDERS,
 	HTTP_PROVIDERS,
+	ELEMENT_PROBE_PROVIDERS, // remove in production
 	provide(LocationStrategy, { useClass: PathLocationStrategy }) // enables the following: /#/<component_name> rather than /<component_name>
 	//alternative
 	//provide(LocationStrategy, { useClass: HTML5LocationStrategy }) // enable HTML5 history API location strategy
