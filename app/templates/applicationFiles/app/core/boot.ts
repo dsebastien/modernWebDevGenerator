@@ -7,7 +7,7 @@ import {App} from "./app";
 import {bootstrap} from "angular2/bootstrap";
 import {provide, enableProdMode} from "angular2/core";
 import {HTTP_PROVIDERS} from "angular2/http";
-import {ELEMENT_PROBE_PROVIDERS} from 'angular2/platform/common_dom';
+import {ELEMENT_PROBE_PROVIDERS} from "angular2/platform/common_dom";
 
 // import Angular 2 Component Router
 // reference: http://blog.thoughtram.io/angular/2015/06/16/routing-in-angular-2.html
