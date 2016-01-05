@@ -1,5 +1,7 @@
 # Modern Web Dev Generator
 
+[![NPM version](https://img.shields.io/npm/v/generator-modern-web-dev.svg)](https://www.npmjs.com/package/generator-modern-web-dev)
+[![Downloads](https://img.shields.io/npm/dm/generator-modern-web-dev.svg)](https://www.npmjs.com/package/generator-modern-web-dev)
 [![Build Status](https://secure.travis-ci.org/dsebastien/modernWebDevGenerator.png?branch=master)](https://travis-ci.org/dsebastien/modernWebDevGenerator)
 [![Coverage Status](
 https://coveralls.io/repos/dsebastien/modernWebDevGenerator/badge.svg?branch=master&service=github
