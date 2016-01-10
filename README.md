@@ -151,7 +151,7 @@ Here's some high level information about these:
 * tsconfig.json: TypeScript compiler configuration. Contains all compiler options, code style rules and file selection/exclusion rules (bypassed by the gulp-typescript plugin!)
   * http://json.schemastore.org/tsconfig
   * https://github.com/Microsoft/TypeScript/wiki/tsconfig.json
-* tsd.json: tsd configuration file: list of TypeScript type definitions files to retrieve
+* typings.json: typings configuration file: list of TypeScript type definitions files to retrieve
 * tslint.json: TypeScript code style configuration (more information: https://www.npmjs.com/package/tslint)
 * Makefile: for \*NIX afficionados
 

@@ -1,3 +1,13 @@
+* 0.2.0
+  * now supports Angular 2 beta 1
+  * now uses modernWebDevBuild 0.3.x: https://github.com/dsebastien/modernWebDevBuild/releases/tag/0.3.0
+  * switched from tsd to typings for TypeScript typings management (new kid in town)
+    * typings supports typings on DefinitelyTyped but has a lot more to offer
+    * check out the following links
+      * https://github.com/typings/typings
+      * https://angularclass.com/the-state-of-typescript-packages/
+  * upgraded babel dependencies
+  * added Jasmine imports in the provided unit tests
 * 0.1.4
   * added a update check: you will be notified whenever a new version of the generator is available
     * you can disable the update check by passing the following flag: `--no-update-notifier`

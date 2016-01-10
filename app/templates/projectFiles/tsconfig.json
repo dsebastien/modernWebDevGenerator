@@ -14,7 +14,7 @@
 	"inlineSources": false,
 	"sourceMap": false,
 	"outDir": "./.tmp",
-	"project": "./app",
+	"rootDir": "./app",
 	"moduleResolution": "node",
 	"listFiles": false
   },
@@ -32,12 +32,10 @@
 	"placeOpenBraceOnNewLineForFunctions": false,
 	"placeOpenBraceOnNewLineForControlBlocks": false
   },
-  "filesGlob": [
-	"./typings/*.d.ts",
-	"./app/**/*.ts"
-  ],
   "exclude": [
 	"node_modules",
-	"jspm_packages"
+	"jspm_packages",
+	"typings/browser",
+	"typings/browser.d.ts"
   ]
 }
