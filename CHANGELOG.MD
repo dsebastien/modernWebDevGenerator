@@ -1,3 +1,5 @@
+* 0.2.1
+  * updated gitignore for typings
 * 0.2.0
   * now supports Angular 2 beta 1
   * now uses modernWebDevBuild 0.3.x: https://github.com/dsebastien/modernWebDevBuild/releases/tag/0.3.0
