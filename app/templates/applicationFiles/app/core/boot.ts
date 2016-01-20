@@ -11,7 +11,7 @@ import {ELEMENT_PROBE_PROVIDERS} from "angular2/platform/common_dom";
 
 // import Angular 2 Component Router
 // reference: http://blog.thoughtram.io/angular/2015/06/16/routing-in-angular-2.html
-import {LocationStrategy, PathLocationStrategy, ROUTER_PROVIDERS} from "angular2/router";
+import {LocationStrategy, PathLocationStrategy, HashLocationStrategy, ROUTER_PROVIDERS} from "angular2/router";
 
 // enable production mode of Angular
 // enableProdMode(); // enable for production (also uncomment the import above!)
@@ -25,9 +25,7 @@ bootstrap(App, [
 	ROUTER_PROVIDERS,
 	HTTP_PROVIDERS,
 	ELEMENT_PROBE_PROVIDERS, // remove in production
-	provide(LocationStrategy, { useClass: PathLocationStrategy }) // enables the following: /#/<component_name> rather than /<component_name>
-	//alternative
-	//provide(LocationStrategy, { useClass: HTML5LocationStrategy }) // enable HTML5 history API location strategy
+	provide(LocationStrategy, { useClass: PathLocationStrategy }) // can be switched to HashLocationStrategy if you cannot configure your server appropriately for URL rewriting
 
 ]).then(
 	(success:any) => console.log("Bootstrap successful"),
