@@ -44,12 +44,15 @@
 		Loading ...
 	</app>
 
-	<!--
-        Angular 2 polyfills (zone.js, reflect-metadata, ...) must be loaded BEFORE SystemJS
-    -->
+
+	<!-- Polyfills: must all be loaded before SystemJS -->	
+
+	<!-- ES6 Shim (ES2015 support) -->
+	<!-- inline node_modules/es6-shim/es6-shim.js -->
+	<script inline src="node_modules/es6-shim/es6-shim.js"></script>
 	<!-- inline node_modules/angular2/bundles/angular2-polyfills.js -->
 	<script inline src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-	
+
 	<!-- build:js-app -->
 	<!-- for production, this is all replaced by a minified bundle -->
 	<script src="jspm_packages/system.src.js"></script>

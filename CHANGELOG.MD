@@ -2,22 +2,23 @@
   * cleaned boot.ts code regarding Angular 2's location strategies (cfr #62)
   * added a dependency on karma-jspm in the generated projects (previously part of the build)
   * added missing expect import in the tests (closes #68)
-  * fixed the issue with .gitignore that was not copied
+  * fixed the issue with .gitignore that was not copied (closes #64)
+  * added missing es6-shim (closes #55)
 * 0.2.1
   * updated gitignore for typings
 * 0.2.0
   * now supports Angular 2 beta 1
   * now uses modernWebDevBuild 0.3.x: https://github.com/dsebastien/modernWebDevBuild/releases/tag/0.3.0
   * switched from tsd to typings for TypeScript typings management (new kid in town)
-    * typings supports typings on DefinitelyTyped but has a lot more to offer
-    * check out the following links
-      * https://github.com/typings/typings
-      * https://angularclass.com/the-state-of-typescript-packages/
+	* typings supports typings on DefinitelyTyped but has a lot more to offer
+	* check out the following links
+	  * https://github.com/typings/typings
+	  * https://angularclass.com/the-state-of-typescript-packages/
   * upgraded babel dependencies
   * added Jasmine imports in the provided unit tests
 * 0.1.4
   * added a update check: you will be notified whenever a new version of the generator is available
-    * you can disable the update check by passing the following flag: `--no-update-notifier`
+	* you can disable the update check by passing the following flag: `--no-update-notifier`
 * 0.1.3
   * now uses modernWebDevBuild 0.2.x
   * disabled HTML minification by default (not supported by Angular 2 anymore: https://github.com/dsebastien/modernWebDevBuild/issues/67)
