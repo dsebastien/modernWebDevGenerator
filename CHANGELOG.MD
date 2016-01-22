@@ -1,3 +1,7 @@
+* 0.3.0
+  * cleaned boot.ts code regarding Angular 2's location strategies (cfr #62)
+  * added a dependency on karma-jspm in the generated projects (previously part of the build)
+  * added missing expect import in the tests (closes #68)
 * 0.2.1
   * updated gitignore for typings
 * 0.2.0
