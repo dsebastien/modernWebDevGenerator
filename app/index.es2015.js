@@ -216,6 +216,10 @@ let modernWebDevGenerator = yeoman.Base.extend({
 				this.templatePath(projectTemplatesFolder + "README.md"),
 				this.destinationPath("README.md"), this.props
 			);
+			this.fs.copyTpl(
+				this.templatePath(projectTemplatesFolder + "_gitignore"),
+				this.destinationPath(".gitignore"), this.props
+			);
 		}
 	},
 
