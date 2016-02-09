@@ -1,3 +1,5 @@
+* 0.3.3
+  * fixed a problem with the jspm dependencies of generated projects (fixes #80)
 * 0.3.2
   * upgraded dependencies
   * updated .jshintrc

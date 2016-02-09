@@ -18,13 +18,13 @@
     "directories": {},
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "babel-runtime": "npm:babel-runtime@6.5.x",
+      "babel-runtime": "npm:babel-runtime@6.5.0",
       "rxjs": "npm:rxjs@5.0.0-beta.0",
       "angular2": "npm:angular2@2.0.0-beta.3",
       "normalize.css": "github:necolas/normalize.css@3.0.3"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@6.5.x"
+      "babel": "npm:babel-core@6.5.0"
     }
   },
   "dependencies": {
