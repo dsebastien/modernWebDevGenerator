@@ -24,12 +24,12 @@ requireDir("./gulp/tasks", {
 });
 
 // Default task
-gulp.task("default", "Build production files", (callback) =>{
+gulp.task("default", "Build production files", () =>{
 	return runSequence("clean",  [
 		"check-js-style",
 		"check-js-quality",
 		"scripts-javascript-dist",
 		"validate-package-json"
-	], callback);
+	]);
 });
 
