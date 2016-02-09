@@ -1,3 +1,7 @@
+* 0.3.2
+  * upgraded dependencies
+  * updated .jshintrc
+  * added tsd (needed for zone.js) see #74
 * 0.3.1
   * now supports Angular 2 beta 3
 * 0.3.0

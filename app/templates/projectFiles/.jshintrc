@@ -1,6 +1,6 @@
 {
   "esnext": true,
-  "strict": true,
+  "strict": "global",
   "devel": true,
   "browser": true,
   "forin": true,
@@ -26,7 +26,6 @@
   "module": true,
   "varstmt": true,
   "eqnull": true,
-  "globalstrict": true,
   "globals": {
 	"protractor": false,
 	"module": false,
