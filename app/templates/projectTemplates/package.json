@@ -46,7 +46,7 @@
     "modern-web-dev-build": "0.3.x",
     "jasmine-core": "2.4.x",
     "karma-jasmine": "0.3.x",
-    "typings": "0.5.x",
+    "typings": "0.6.x",
     "tsd": "0.6.5"
   },
   "engines": {
