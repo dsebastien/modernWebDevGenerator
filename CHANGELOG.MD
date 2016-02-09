@@ -1,3 +1,5 @@
+* 0.3.1
+  * now supports Angular 2 beta 3
 * 0.3.0
   * cleaned boot.ts code regarding Angular 2's location strategies (cfr #62)
   * added a dependency on karma-jspm in the generated projects (previously part of the build)

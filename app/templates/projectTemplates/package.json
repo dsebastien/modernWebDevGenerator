@@ -20,7 +20,7 @@
     "dependencies": {
       "babel-runtime": "npm:babel-runtime@^6.3.13",
       "rxjs": "npm:rxjs@^5.0.0-beta.0",
-      "angular2": "npm:angular2@^2.0.0-beta.1",
+      "angular2": "npm:angular2@^2.0.0-beta.3",
       "normalize.css": "github:necolas/normalize.css@^3.0.3"
     },
     "devDependencies": {
@@ -30,10 +30,10 @@
   "dependencies": {
     "babel-runtime": "6.3.x",
     "reflect-metadata": "0.1.2",
-    "zone.js": "0.5.10",
+    "zone.js": "0.5.11",
     "es6-shim": "0.33.3",
     "rxjs": "5.0.0-beta.0",
-    "angular2": "2.0.0-beta.1"
+    "angular2": "2.0.0-beta.3"
   },
   "devDependencies": {
     "babel-core": "6.4.x",
@@ -53,6 +53,8 @@
     "npm": ">=2.0.0"
   },
   "scripts": {
+    "tsc": "tsc",
+    "typings": "typings",
     "clean": "gulp clean",
     "compile": "gulp",
     "build": "npm run compile && npm run test",
@@ -60,10 +62,10 @@
     "start": "npm run serve",
     "serve": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve",
     "serve-dist": "nodemon --watch gulpfile.js --watch gulpfile.babel.js --watch package.json --watch .jshintrc --watch .jscsrc --watch tsconfig.json --watch tslint.json --watch jspm.conf.js --exec gulp serve-dist",
-    "update": "npm install --no-optional && jspm update && jspm dl-loader && npm run typings",
+    "update": "npm install --no-optional && jspm update && jspm dl-loader && npm run typings-install",
     "outdated": "npm outdated",
     "help": "gulp help",
-    "typings": "typings install",
-    "setup": "npm install --no-optional && jspm install && jspm dl-loader && npm run typings"
+    "typings-install": "typings install",
+    "setup": "npm install --no-optional && jspm install && jspm dl-loader && npm run typings-install"
   }
 }

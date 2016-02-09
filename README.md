@@ -90,7 +90,7 @@ yo modern-web-dev
 Once you've answered all the questions, the generator will do its thing.
 Once done, you'll be able to run the development web server and start hacking away using:
 ```bash
-npm run serve
+npm start
 ```
 
 Enjoy!
