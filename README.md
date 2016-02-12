@@ -59,7 +59,7 @@ Please note that this project is heavily inspired from:
 * Many others I'm forgetting :(
 
 ## Status & roadmap
-Check out the issues & labels to get an idea of what's next.
+Check out the issues/labels & milestones to get an idea of what's next.
 For existing features, refer to the previous sections.
 
 Check out the [change log](CHANGELOG.MD)
