@@ -1,5 +1,6 @@
-* 0.3.5
-  * upgraded the version of the typings dependency
+* 0.4.0
+  * now uses modernWebDevBuild 0.4.x: https://github.com/dsebastien/modernWebDevBuild/releases/tag/0.4.0
+  * upgraded the version of the typings dependency (closes #84)
 * 0.3.4
   * fixed a path issue in vendor.scss (fixes #82)
 * 0.3.3
