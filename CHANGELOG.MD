@@ -1,3 +1,6 @@
+* 0.4.1
+  * now supports Angular 2 beta 6
+  * removed tsd dependency
 * 0.4.0
   * now uses modernWebDevBuild 0.4.x: https://github.com/dsebastien/modernWebDevBuild/releases/tag/0.4.0
   * upgraded the version of the typings dependency (closes #84)
