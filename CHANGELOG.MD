@@ -1,3 +1,7 @@
+* 0.5.0
+  * now supports Angular 2 beta 7
+  * now uses modernWebDevBuild 0.5.x
+  * now uses TypeScript 1.8.x
 * 0.4.1
   * now supports Angular 2 beta 6
   * removed tsd dependency

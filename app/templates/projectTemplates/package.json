@@ -17,7 +17,7 @@
   "jspm": {
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "angular2": "npm:angular2@2.0.0-beta.6",
+      "angular2": "npm:angular2@2.0.0-beta.7",
       "babel-runtime": "npm:babel-runtime@6.5.0",
       "normalize.css": "github:necolas/normalize.css@3.0.3",
       "rxjs": "npm:rxjs@5.0.0-beta.2"
@@ -32,7 +32,7 @@
     "zone.js": "0.5.x",
     "es6-shim": "0.33.x",
     "rxjs": "5.0.0-beta.2",
-    "angular2": "2.0.0-beta.6"
+    "angular2": "2.0.0-beta.7"
   },
   "devDependencies": {
     "babel-core": "6.5.x",
@@ -41,8 +41,8 @@
     "gulp": "3.9.x",
     "jspm": "0.16.x",
     "nodemon": "1.8.x",
-    "typescript": "1.7.3",
-    "modern-web-dev-build": "0.4.x",
+    "typescript": "1.8.x",
+    "modern-web-dev-build": "0.5.x",
     "jasmine-core": "2.4.x",
     "karma-jasmine": "0.3.x",
     "typings": "0.x"
