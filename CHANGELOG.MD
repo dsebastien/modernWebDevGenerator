@@ -1,3 +1,5 @@
+* 0.5.1
+  * removed Makefile (not maintained)
 * 0.5.0
   * now supports Angular 2 beta 7
   * now uses modernWebDevBuild 0.5.x
