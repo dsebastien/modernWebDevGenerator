@@ -7,11 +7,11 @@
 // ensure that images can't exceed the width of their containers
 // http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 // prevent these from overflowing their containers
 img, embed, object, video {
-	max-width: 100%;
+  max-width: 100%;
 }

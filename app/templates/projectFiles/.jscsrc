@@ -5,10 +5,11 @@
 	"lineBreakBeforeClosingBraces": false
   },
   "validateIndentation": {
-	"value": "\t",
-	"includeEmptyLines": false
+	"value": 4, 
+      "allExcept": [
+          "emptyLines"
+      ]
   },
-  "validateLineBreaks": "LF",
   "validateNewlineAfterArrayElements": {
 	"maximum": 2
   },

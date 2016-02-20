@@ -36,49 +36,49 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
 // ensure that the body uses (at least the full browser height)
 // http://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height
 html {
-	height: 100%;
+  height: 100%;
 }
 
-body{
-	min-height: 100%;
+body {
+  min-height: 100%;
 }
 
 // ensure we have a common line-height set as baseline
 body {
-	line-height: 1.4; // unit-less: https://css-tricks.com/almanac/properties/l/line-height/
+  line-height: 1.4; // unit-less: https://css-tricks.com/almanac/properties/l/line-height/
 }
 
 // reset HTML5 display-role for older browsers
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main, li{
-	display: block;
+footer, header, hgroup, menu, nav, section, main, li {
+  display: block;
 }
 
 // use a more logical box model
 // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 // make sure that headings inherit the same size as the surrounding text by default
 // rather than having an arbitrary larger size. There'll be less to override that way
 // http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
-h1, h2, h3, h4, h5, h6{
-	font-size: inherit;
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
 }
 
 // less surprises when linking to things
@@ -88,29 +88,30 @@ h1, h2, h3, h4, h5, h6{
 // simplifies styles by making the links inherit the color intended for the region they're in
 a,
 button {
-	color: inherit;
-	transition: .3s;
+  color: inherit;
+  transition: .3s;
 }
+
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 // make buttons consistent for starters
 // http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
 button {
-	overflow: visible; // for IE
-	border: 0; // reset
-	font: inherit; // reset
-	-webkit-font-smoothing: inherit; // fix buggy inheritance
-	letter-spacing: inherit; // reset
-	background: none; // reset
-	cursor: pointer; // pointers FTW
+  overflow: visible; // for IE
+  border: 0; // reset
+  font: inherit; // reset
+  -webkit-font-smoothing: inherit; // fix buggy inheritance
+  letter-spacing: inherit; // reset
+  background: none; // reset
+  cursor: pointer; // pointers FTW
 }
 
 // fix a known bug in FF that causes buttons to display larger than expected: https://bugzilla.mozilla.org/show_bug.cgi?id=140562
 ::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 // prevent any object from being highlighted upon touch event on Webkit
@@ -121,20 +122,20 @@ textarea,
 button,
 select,
 a {
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 // Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
 // These selection rule sets have to be separate.
 ::-moz-selection {
-	background: $textSelectionColor;
-	text-shadow: none;
+  background: $textSelectionColor;
+  text-shadow: none;
 }
 
 ::selection {
-	background: $textSelectionColor;
-	text-shadow: none;
+  background: $textSelectionColor;
+  text-shadow: none;
 }
 
 // remove the gap between audio, canvas, iframes,
@@ -145,12 +146,12 @@ iframe,
 img,
 svg,
 video {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 // allow only vertical resizing of textareas.
 textarea {
-	resize: vertical;
+  resize: vertical;
 }
 
 // we're going to change these anyway

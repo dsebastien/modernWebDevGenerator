@@ -35,7 +35,6 @@
   display: inline !important;
 }
 
-
 // 1. Fix for Firefox bug: an image styled `max-width:100%` within an
 // inline-block will display at its default size, and not limit its width to
 // 100% of an ancestral container.
@@ -56,7 +55,6 @@
   display: table-row !important;
 }
 
-
 // Vertical alignment utilities
 // Depends on an appropriate `display` value.
 // reference: https://github.com/suitcss/utils-align
@@ -76,7 +74,6 @@
 .u-alignTop {
   vertical-align: top !important;
 }
-
 
 /// Layout utilities
 // reference: https://github.com/suitcss/utils-layout
@@ -140,7 +137,6 @@
 .u-floatRight {
   float: right !important;
 }
-
 
 // Links
 // reference: https://github.com/suitcss/utils-link
@@ -236,7 +232,6 @@
 .u-posStatic {
   position: static !important;
 }
-
 
 // Text
 // reference: https://github.com/suitcss/utils-text
