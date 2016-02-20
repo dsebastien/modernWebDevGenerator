@@ -1,5 +1,8 @@
 * 0.5.1
+  * fixed issue with the example unit test (wrong jasmine typings) (closed #88)
   * removed Makefile (not maintained)
+  * switched to spaces (enough tabs already)
+  * updated tslint rules
 * 0.5.0
   * now supports Angular 2 beta 7
   * now uses modernWebDevBuild 0.5.x
