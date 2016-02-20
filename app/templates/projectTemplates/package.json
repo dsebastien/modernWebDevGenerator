@@ -9,6 +9,7 @@
   "contributors": [
   ],
   "homepage": "<%= projectURL %>",
+  "bugs": "<%= projectURL %>",
   "keywords": [
     "web"
   ],
