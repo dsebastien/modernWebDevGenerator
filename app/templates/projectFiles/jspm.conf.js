@@ -7,7 +7,7 @@ System.config({
   },
 
   map: {
-    "angular2": "npm:angular2@2.0.0-beta.7",
+    "angular2": "npm:angular2@2.0.0-beta.8",
     "babel": "npm:babel-core@6.5.0",
     "babel-runtime": "npm:babel-runtime@6.5.0",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
@@ -84,7 +84,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:angular2@2.0.0-beta.7": {
+    "npm:angular2@2.0.0-beta.8": {
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "es6-promise": "npm:es6-promise@3.1.2",
       "es6-shim": "npm:es6-shim@0.33.13",
@@ -93,10 +93,14 @@ System.config({
       "rxjs": "npm:rxjs@5.0.0-beta.2",
       "zone.js": "npm:zone.js@0.5.15"
     },
-    "npm:asn1.js@4.4.0": {
+    "npm:ansi-styles@2.2.0": {
+      "color-convert": "npm:color-convert@1.0.0"
+    },
+    "npm:asn1.js@4.5.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
-      "bn.js": "npm:bn.js@4.10.3",
+      "bn.js": "npm:bn.js@4.10.5",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
       "inherits": "npm:inherits@2.0.1",
       "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
@@ -104,7 +108,7 @@ System.config({
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
     },
-    "npm:babel-code-frame@6.5.0": {
+    "npm:babel-code-frame@6.6.0": {
       "babel-runtime": "npm:babel-runtime@5.8.35",
       "chalk": "npm:chalk@1.1.1",
       "esutils": "npm:esutils@2.0.2",
@@ -113,17 +117,17 @@ System.config({
       "repeating": "npm:repeating@1.1.3"
     },
     "npm:babel-core@6.5.0": {
-      "babel-code-frame": "npm:babel-code-frame@6.5.0",
-      "babel-generator": "npm:babel-generator@6.5.0",
-      "babel-helpers": "npm:babel-helpers@6.5.0",
-      "babel-messages": "npm:babel-messages@6.5.0",
-      "babel-register": "npm:babel-register@6.5.2",
+      "babel-code-frame": "npm:babel-code-frame@6.6.0",
+      "babel-generator": "npm:babel-generator@6.6.4",
+      "babel-helpers": "npm:babel-helpers@6.6.0",
+      "babel-messages": "npm:babel-messages@6.6.0",
+      "babel-register": "npm:babel-register@6.6.0",
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-template": "npm:babel-template@6.5.0",
-      "babel-traverse": "npm:babel-traverse@6.5.0",
-      "babel-types": "npm:babel-types@6.5.2",
-      "babylon": "npm:babylon@6.5.2",
-      "convert-source-map": "npm:convert-source-map@1.1.3",
+      "babel-template": "npm:babel-template@6.6.4",
+      "babel-traverse": "npm:babel-traverse@6.6.4",
+      "babel-types": "npm:babel-types@6.6.4",
+      "babylon": "npm:babylon@6.6.4",
+      "convert-source-map": "npm:convert-source-map@1.2.0",
       "debug": "npm:debug@2.2.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "json5": "npm:json5@0.4.0",
@@ -141,18 +145,18 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:babel-core@6.5.2": {
-      "babel-code-frame": "npm:babel-code-frame@6.5.0",
-      "babel-generator": "npm:babel-generator@6.5.0",
-      "babel-helpers": "npm:babel-helpers@6.5.0",
-      "babel-messages": "npm:babel-messages@6.5.0",
-      "babel-register": "npm:babel-register@6.5.2",
+    "npm:babel-core@6.6.4": {
+      "babel-code-frame": "npm:babel-code-frame@6.6.0",
+      "babel-generator": "npm:babel-generator@6.6.4",
+      "babel-helpers": "npm:babel-helpers@6.6.0",
+      "babel-messages": "npm:babel-messages@6.6.0",
+      "babel-register": "npm:babel-register@6.6.0",
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-template": "npm:babel-template@6.5.0",
-      "babel-traverse": "npm:babel-traverse@6.5.0",
-      "babel-types": "npm:babel-types@6.5.2",
-      "babylon": "npm:babylon@6.5.2",
-      "convert-source-map": "npm:convert-source-map@1.1.3",
+      "babel-template": "npm:babel-template@6.6.4",
+      "babel-traverse": "npm:babel-traverse@6.6.4",
+      "babel-types": "npm:babel-types@6.6.4",
+      "babylon": "npm:babylon@6.6.4",
+      "convert-source-map": "npm:convert-source-map@1.2.0",
       "debug": "npm:debug@2.2.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "json5": "npm:json5@0.4.0",
@@ -170,10 +174,10 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:babel-generator@6.5.0": {
-      "babel-messages": "npm:babel-messages@6.5.0",
+    "npm:babel-generator@6.6.4": {
+      "babel-messages": "npm:babel-messages@6.6.0",
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-types": "npm:babel-types@6.5.2",
+      "babel-types": "npm:babel-types@6.6.4",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "detect-indent": "npm:detect-indent@3.0.1",
       "is-integer": "npm:is-integer@1.0.6",
@@ -182,18 +186,18 @@ System.config({
       "source-map": "npm:source-map@0.5.3",
       "trim-right": "npm:trim-right@1.0.1"
     },
-    "npm:babel-helpers@6.5.0": {
+    "npm:babel-helpers@6.6.0": {
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-template": "npm:babel-template@6.5.0"
+      "babel-template": "npm:babel-template@6.6.4"
     },
-    "npm:babel-messages@6.5.0": {
+    "npm:babel-messages@6.6.0": {
       "babel-runtime": "npm:babel-runtime@5.8.35",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:babel-register@6.5.2": {
-      "babel-core": "npm:babel-core@6.5.2",
+    "npm:babel-register@6.6.0": {
+      "babel-core": "npm:babel-core@6.6.4",
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "core-js": "npm:core-js@1.2.6",
+      "core-js": "npm:core-js@2.1.3",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "home-or-tmp": "npm:home-or-tmp@1.0.0",
       "lodash": "npm:lodash@3.10.1",
@@ -210,19 +214,19 @@ System.config({
       "core-js": "npm:core-js@1.2.6",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:babel-template@6.5.0": {
+    "npm:babel-template@6.6.4": {
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-traverse": "npm:babel-traverse@6.5.0",
-      "babel-types": "npm:babel-types@6.5.2",
-      "babylon": "npm:babylon@6.5.2",
+      "babel-traverse": "npm:babel-traverse@6.6.4",
+      "babel-types": "npm:babel-types@6.6.4",
+      "babylon": "npm:babylon@6.6.4",
       "lodash": "npm:lodash@3.10.1"
     },
-    "npm:babel-traverse@6.5.0": {
-      "babel-code-frame": "npm:babel-code-frame@6.5.0",
-      "babel-messages": "npm:babel-messages@6.5.0",
+    "npm:babel-traverse@6.6.4": {
+      "babel-code-frame": "npm:babel-code-frame@6.6.0",
+      "babel-messages": "npm:babel-messages@6.6.0",
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-types": "npm:babel-types@6.5.2",
-      "babylon": "npm:babylon@6.5.2",
+      "babel-types": "npm:babel-types@6.6.4",
+      "babylon": "npm:babylon@6.6.4",
       "debug": "npm:debug@2.2.0",
       "globals": "npm:globals@8.18.0",
       "invariant": "npm:invariant@2.2.0",
@@ -230,19 +234,19 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "repeating": "npm:repeating@1.1.3"
     },
-    "npm:babel-types@6.5.2": {
+    "npm:babel-types@6.6.4": {
       "babel-runtime": "npm:babel-runtime@5.8.35",
-      "babel-traverse": "npm:babel-traverse@6.5.0",
+      "babel-traverse": "npm:babel-traverse@6.6.4",
       "esutils": "npm:esutils@2.0.2",
       "lodash": "npm:lodash@3.10.1",
       "to-fast-properties": "npm:to-fast-properties@1.0.1"
     },
-    "npm:babylon@6.5.2": {
+    "npm:babylon@6.6.4": {
       "babel-runtime": "npm:babel-runtime@5.8.35",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:bn.js@4.10.3": {
+    "npm:bn.js@4.10.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:brace-expansion@1.1.3": {
@@ -274,16 +278,16 @@ System.config({
       "des.js": "npm:des.js@1.0.0",
       "inherits": "npm:inherits@2.0.1"
     },
-    "npm:browserify-rsa@4.0.0": {
-      "bn.js": "npm:bn.js@4.10.3",
+    "npm:browserify-rsa@4.0.1": {
+      "bn.js": "npm:bn.js@4.10.5",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "constants": "github:jspm/nodelibs-constants@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "randombytes": "npm:randombytes@2.0.2"
+      "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:browserify-sign@4.0.0": {
-      "bn.js": "npm:bn.js@4.10.3",
-      "browserify-rsa": "npm:browserify-rsa@4.0.0",
+      "bn.js": "npm:bn.js@4.10.5",
+      "browserify-rsa": "npm:browserify-rsa@4.0.1",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
       "create-hmac": "npm:create-hmac@1.1.4",
@@ -306,11 +310,11 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:chalk@1.1.1": {
-      "ansi-styles": "npm:ansi-styles@2.1.0",
-      "escape-string-regexp": "npm:escape-string-regexp@1.0.4",
+      "ansi-styles": "npm:ansi-styles@2.2.0",
+      "escape-string-regexp": "npm:escape-string-regexp@1.0.5",
       "has-ansi": "npm:has-ansi@2.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
-      "strip-ansi": "npm:strip-ansi@3.0.0",
+      "strip-ansi": "npm:strip-ansi@3.0.1",
       "supports-color": "npm:supports-color@2.0.0"
     },
     "npm:cipher-base@1.0.2": {
@@ -322,7 +326,7 @@ System.config({
     "npm:constants-browserify@0.0.1": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:convert-source-map@1.1.3": {
+    "npm:convert-source-map@1.2.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0"
@@ -333,11 +337,17 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:core-js@2.1.3": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:create-ecdh@4.0.0": {
-      "bn.js": "npm:bn.js@4.10.3",
+      "bn.js": "npm:bn.js@4.10.5",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "elliptic": "npm:elliptic@6.2.3"
@@ -349,7 +359,7 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "inherits": "npm:inherits@2.0.1",
       "ripemd160": "npm:ripemd160@1.0.1",
-      "sha.js": "npm:sha.js@2.4.4"
+      "sha.js": "npm:sha.js@2.4.5"
     },
     "npm:create-hmac@1.1.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -368,7 +378,7 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "pbkdf2": "npm:pbkdf2@3.0.4",
       "public-encrypt": "npm:public-encrypt@4.0.0",
-      "randombytes": "npm:randombytes@2.0.2"
+      "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:debug@2.2.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -392,15 +402,15 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:diffie-hellman@5.0.2": {
-      "bn.js": "npm:bn.js@4.10.3",
+      "bn.js": "npm:bn.js@4.10.5",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "miller-rabin": "npm:miller-rabin@4.0.0",
-      "randombytes": "npm:randombytes@2.0.2",
+      "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:elliptic@6.2.3": {
-      "bn.js": "npm:bn.js@4.10.3",
+      "bn.js": "npm:bn.js@4.10.5",
       "brorand": "npm:brorand@1.0.5",
       "hash.js": "npm:hash.js@1.0.3",
       "inherits": "npm:inherits@2.0.1",
@@ -466,7 +476,7 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:miller-rabin@4.0.0": {
-      "bn.js": "npm:bn.js@4.10.3",
+      "bn.js": "npm:bn.js@4.10.5",
       "brorand": "npm:brorand@1.0.5"
     },
     "npm:minimatch@2.0.10": {
@@ -483,7 +493,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:parse-asn1@5.0.0": {
-      "asn1.js": "npm:asn1.js@4.4.0",
+      "asn1.js": "npm:asn1.js@4.5.1",
       "browserify-aes": "npm:browserify-aes@1.0.6",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
@@ -513,18 +523,18 @@ System.config({
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
     "npm:public-encrypt@4.0.0": {
-      "bn.js": "npm:bn.js@4.10.3",
-      "browserify-rsa": "npm:browserify-rsa@4.0.0",
+      "bn.js": "npm:bn.js@4.10.5",
+      "browserify-rsa": "npm:browserify-rsa@4.0.1",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "parse-asn1": "npm:parse-asn1@5.0.0",
-      "randombytes": "npm:randombytes@2.0.2"
+      "randombytes": "npm:randombytes@2.0.3"
     },
     "npm:punycode@1.3.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:randombytes@2.0.2": {
+    "npm:randombytes@2.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -556,7 +566,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:sha.js@2.4.4": {
+    "npm:sha.js@2.4.5": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "inherits": "npm:inherits@2.0.1",
@@ -590,7 +600,7 @@ System.config({
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:strip-ansi@3.0.0": {
+    "npm:strip-ansi@3.0.1": {
       "ansi-regex": "npm:ansi-regex@2.0.0"
     },
     "npm:supports-color@2.0.0": {

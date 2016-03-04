@@ -1,3 +1,5 @@
+* 0.5.2
+  * now supports Angular 2 beta 8
 * 0.5.1
   * fixed issue with the example unit test (wrong jasmine typings) (closed #88)
   * removed Makefile (not maintained)
