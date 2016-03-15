@@ -1,3 +1,5 @@
+* 0.5.3
+  * now supports Angular 2 beta 9
 * 0.5.2
   * now supports Angular 2 beta 8
 * 0.5.1
