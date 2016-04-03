@@ -1,3 +1,6 @@
+* 0.5.4
+  * now supports Angular 2 beta 13
+  * fixed an issue with a dependency of babel (#97)
 * 0.5.3
   * now supports Angular 2 beta 9
 * 0.5.2

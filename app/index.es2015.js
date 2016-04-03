@@ -3,7 +3,7 @@
 const packageJSON = require("../package.json");
 
 import yeoman from "yeoman-generator";
-import yosay  from "yosay";
+import yosay from "yosay";
 import chalk from "chalk";
 import updateNotifier from "update-notifier";
 import stringLength from "string-length";
