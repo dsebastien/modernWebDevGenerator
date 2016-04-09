@@ -18,14 +18,14 @@ help(gulp); // provide help through "gulp help" -- the help text is the second g
 import requireDir from "require-dir";
 import runSequence from "run-sequence";
 
-// Load all tasks in gulp/tasks, including subfolders
+// Load all tasks in gulp/tasks, including sub-folders
 requireDir("./gulp/tasks", {
 	recurse: true
 });
 
 // Default task
 gulp.task("default", "Build production files", () =>{
-	return runSequence("clean",  [
+	return runSequence([
 		"check-js-style",
 		"check-js-quality",
 		"scripts-javascript-dist",

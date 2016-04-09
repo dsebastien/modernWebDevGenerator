@@ -85,6 +85,8 @@
   },
   "scripts": {
     "clean": "gulp clean",
+    "gulp": "gulp -- ",
+    "prebuild": "gulp clean",
     "build": "gulp",
     "pretest": "npm run build",
     "test": "mocha",
