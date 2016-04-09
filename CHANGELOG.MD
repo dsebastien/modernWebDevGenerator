@@ -1,3 +1,5 @@
+* 0.5.5
+  * fixed an issue with the build script (closes #114)
 * 0.5.4
   * now supports Angular 2 beta 13
   * fixed an issue with a dependency of babel (#97)
