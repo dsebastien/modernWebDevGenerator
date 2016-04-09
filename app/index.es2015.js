@@ -75,7 +75,7 @@ const checkForUpdates = () =>{
 								retVal = yosay(message.join(" "), {maxLength: stringLength(message[ 0 ])});
 				}
 				return retVal;
-}
+};
 
 let modernWebDevGenerator = yeoman.Base.extend({
 
