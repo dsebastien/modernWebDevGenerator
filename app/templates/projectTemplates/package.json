@@ -18,7 +18,16 @@
   "jspm": {
     "configFile": "jspm.conf.js",
     "dependencies": {
-      "angular2": "npm:angular2@2.0.0-beta.13",
+      "@angular/common": "npm:@angular/common@2.0.0-rc.3",
+      "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.3",
+      "@angular/core": "npm:@angular/core@2.0.0-rc.3",
+      "@angular/forms": "npm:@angular/forms@0.1.1",
+      "@angular/http": "npm:@angular/http@2.0.0-rc.3",
+      "@angular/platform-browser": "npm:@angular/platform-browser@2.0.0-rc.3",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.0.0-rc.3",
+      "@angular/router": "npm:@angular/router@3.0.0-alpha.7",
+      "@angular/router-deprecated": "npm:@angular/router-deprecated@2.0.0-rc.2",
+      "@angular/upgrade": "npm:@angular/upgrade@2.0.0-rc.3",
       "babel-runtime": "npm:babel-runtime@6.6.1",
       "normalize.css": "github:necolas/normalize.css@3.0.3",
       "rxjs": "npm:rxjs@5.0.0-beta.2"
@@ -33,7 +42,16 @@
     "zone.js": "^0.6.6",
     "es6-shim": "^0.35.0",
     "rxjs": "5.0.0-beta.2",
-    "angular2": "2.0.0-beta.13"
+    "@angular/common": "2.0.0-rc.3",
+    "@angular/compiler": "2.0.0-rc.3",
+    "@angular/core": "2.0.0-rc.3",
+    "@angular/forms": "0.1.1",
+    "@angular/http": "2.0.0-rc.3",
+    "@angular/platform-browser": "2.0.0-rc.3",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
+    "@angular/router": "3.0.0-alpha.7",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.3"
   },
   "devDependencies": {
     "babel-core": "^6.7.4",
