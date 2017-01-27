@@ -62,7 +62,7 @@
     "jshint": "^2.9.1",
     "gulp-jshint": "^2.0.0",
     "gulp-nice-package": "^1.1.0",
-    "gulp-notify": "^2.2.0",
+    "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^2.1.0",
