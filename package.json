@@ -45,7 +45,7 @@
     "string-length": "^1.0.1"
   },
   "devDependencies": {
-    "yeoman-assert": "^2.1.1",
+    "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.1.0",
     "babel-core": "^6.7.4",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.7.0",
