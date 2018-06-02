@@ -11,7 +11,7 @@ https://coveralls.io/github/dsebastien/modernWebDevGenerator?branch=master
 [![Dependency Status](https://david-dm.org/dsebastien/modernWebDevGenerator.svg?theme=shields.io&style=flat)](https://david-dm.org/dsebastien/modernWebDevGenerator)
 [![devDependency Status](https://david-dm.org/dsebastien/modernWebDevGenerator/dev-status.svg?theme=shields.io&style=flat)](https://david-dm.org/dsebastien/modernWebDevGenerator#info=devDependencies)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-green.svg?style=flat)](https://gitter.im/dsebastien/modernWebDevGenerator?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![License](https://img.shields.io/cocoapods/l/AFNetworking.svg)](LICENSE.MD)
+[![License](https://img.shields.io/cocoapods/l/AFNetworking.svg)](LICENSE.MD) [![Greenkeeper badge](https://badges.greenkeeper.io/dsebastien/modernWebDevGenerator.svg)](https://greenkeeper.io/)
 
 ## About
 ModernWebDevGenerator is a [Yeoman](http://yeoman.io/) generator that will help you quickly get up and running with [ModernWebDevBuild](https://github.com/dsebastien/modernWebDevBuild).
