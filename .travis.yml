@@ -7,6 +7,7 @@ cache:
 branches:
   only:
   - master
+  - /^greenkeeper/.*$/
 notifications:
   email: true
 node_js:
